@@ -1,15 +1,20 @@
+<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
 }
 
 body{
+=======
+body {
+>>>>>>> 33def2a892613339819fdb8da437279ef17d5605
     padding: 0;
     margin: 0;
 }
-video{
+video {
     position: absolute;
     z-index: -1;
+<<<<<<< HEAD
     min-width: 100%;
     min-height: 0%;
     overflow: hidden;
@@ -22,15 +27,62 @@ video{
         width: 100%;
         /* height: 50%; */
         display: flex;
+=======
+    min-width: 90%;
+    /* min-height: 50%; */
+    object-fit: contain;
+}
+/* .wraper{
+    width: 300%;
+    
+    object-fit: contain;
+} */
+>>>>>>> 33def2a892613339819fdb8da437279ef17d5605
 
-    }
+@media (min-width: 992px) {
+#coverPage {
+    width: 50%;
+    /* height: 50%; */
+    display: flex;
 }
-.links{
-    color: white;
-    font-style: calibri;
-    font-size:1em;
-    text-decoration: none;
 }
-nav{
+#showSecondPage {
     position: absolute;
+    left: 80%;
+    top:5%;
+    color: rgb(8, 8, 8);
+    box-shadow: 0 0 20px 1 px rgba(0, 0, 0, 0.3);
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    opacity: 50%;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #fff
+}
+#secondPage {
+    display: none;
+}
+#navigationBar{
+    position: absolute;
+    left: 80%;
+    top:5%;
+    padding: 5px 5px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#iconSearch{
+    position: absolute;
+    left:81%;
+    top:6%;
+}
+footer {
+    display: none;
+}
+.repositoryGit{
+    top:90%;
+    left:5%;
+    max-width: 2%;
+    position: absolute;
+    /* display: none; */
 }
