@@ -1,23 +1,10 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterData } from '../src/data.js';
 
-
-describe('example', () => {
+describe('filterData', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterData).toBe('function');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('returns `filterData by title`', () => {
+    expect(filterData(data.films[0])).toBe("Kiki's Delivery Service");
   });
 });

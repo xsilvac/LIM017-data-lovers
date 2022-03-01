@@ -12,21 +12,21 @@ btn.addEventListener("click", () => {
 
 let allMovies = data.films;
 const printFilms = document.getElementById("listOfFilms");
-
-const showFilms = (x) => {
-    return` <section class = "containerMovies" id="${x.id}">
+for(let x of allMovies) {
+    printFilms.innerHTML +=
+    `<section class = "containerMovies" id="${x.id}">
     <img src= "${x.poster}" class= "poster" >
     <section class = "title">
     <p>${x.title}</p>
 </section>`
+}
 
-};
 
-const interaction = (movies) => {
-    movies.forEach((newFilms) => {
-        printFilms.innerHTML += showFilms(newFilms);
-    })
-};
-interaction(allMovies);
+
+
+
+
+
+
 
 
