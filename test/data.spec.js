@@ -32,3 +32,7 @@ describe('filterData', () => {
 //     expect(anotherExample()).toBe('OMG');
 //   });
 // });
+  it('returns `filterData by title`', () => {
+    expect(filterData(data.films[0])).toBe("Kiki's Delivery Service");
+  });
+});
