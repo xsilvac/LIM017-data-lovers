@@ -8,4 +8,9 @@ btn.addEventListener("click", () => {
     document.getElementById("firstPage").style.display = "none";
     document.getElementById("secondPage").style.display = "block";
     document.querySelector("footer").style.display = "block";
-})
+});
+
+
+
+
+
