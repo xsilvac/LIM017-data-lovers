@@ -1,6 +1,21 @@
-import { filterData, sortData, computeStats } from '../src/data.js';
+// import { filterData, sortData, computeStats } from '../src/data.js';
 
 
+// describe('filterData', () => {
+//   it('is a function', () => {
+//     expect(typeof filterData).toBe('function');
+//   });
+
+//   it('returns `filterData by title`', () => {
+//     expect(filterData(data.films[0])).toBe("Kiki's Delivery Service");
+//   });
+// });
+
+
+//  describe('sortData', () => {
+//    it('is a function', () => {
+//      expect(typeof anotherExample).toBe('function');
+//    });
 
 describe('filterData', () => {
   it('is a function', () => {
@@ -32,7 +47,7 @@ describe('sortData', () => {
 //     expect(anotherExample()).toBe('OMG');
 //   });
 // });
-  it('returns `filterData by title`', () => {
-    expect(filterData(data.films[0])).toBe("Kiki's Delivery Service");
-  });
+//   it('returns `filterData by title`', () => {
+//     expect(filterData(data.films[0])).toBe("Kiki's Delivery Service");
+//   });
 });
