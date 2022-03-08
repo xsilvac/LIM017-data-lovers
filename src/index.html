@@ -10,37 +10,82 @@
 
 <body>
   <main>
-   <nav>
-    <div id="nav">
-      <img class="fondoNav"  src="imagenes/fondo2.jpg">
-    </div>
-    <!-- <lu>
+    <nav>
+      <div id="nav">
+        <img class="fondoNav" src="imagenes/fondo2.jpg">
+      </div>
+      <!-- <lu>
       <a href="" class="links" >Inicio</a>
       <a href="" class="links" >Lista de peliculas</a>
     </lu> -->
-  </nav>
+    </nav>
 
-  <img src="imagenes/FAN GHIBLI LOGO.png" title="FAN GHIBLI" id="logo">
+    <img src="imagenes/FAN GHIBLI LOGO.png" title="FAN GHIBLI" id="logo">
 
-    <div class="wraper" id="firstPage" >
+    <section class="wraper" id="firstPage">
       <video id="coverPage" src="video/Videoportada.mp4" controls autoplay loop></video>
       <button id="showSecondPage" type="button">Animaciones</button>
-    </div>
+    </section>
 
     <section id="secondPage">
-      <input id="navigationBar" type="text" placeholder="      Buscar...">
+      <input id="navigationBar" type="text" placeholder=" Search...">
       <i id="iconSearch" class="fa fa-search"></i>
+
+      <div id="sectionFilterDirector">
+        <select id="filterDirector" class="filterDesign">
+          <option value="empty" disabled selected>Directors</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+        </select>
+      </div>
+      <div id="sectionFilterProducer">
+        <select id="filterProducer" class="filterDesign">
+          <option value="empty" disabled selected>Producers</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Toru Hara">Toru Hara</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select>
+      </div>
+      <div id="sectionFiltercharacters">
+        <button id="people" class="filterDesign">Characters</button>
+        <!-- <select id="filterCharacters">
+          <option value="empty" disabled selected>Personajes</option>
+          <option value="Lusheeta Toel Ul Laputa">Lusheeta Toel Ul Laputa</option>
+          <option value="Pazu">Pazu</option>
+          <option value="Dola">Dola</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select> -->
+      </div>
+      <div id="sectionOrder">
+        <select id="filterByOrder" class="filterDesign">
+          <option value="empty" disabled selected>Order by</option>
+          <option value="title">A - Z</option>
+          <option value="titleDescending">Z - A</option>
+        </select>
+      </div>
       <div id="listOfFilms"></div>
     </section>
 
-  <footer>
-    <section id="prueba">
-    <!-- <img src="imagenes/github.png" class="repositoryGit"> -->
-  </section>
-  </footer>
-  <div id="root"></div>
-  <script src="https://kit.fontawesome.com/92405dc353.js" crossorigin="anonymous"></script>
-  <script src="main.js" type="module"></script>
+    <section id="thirdPage">
+      <div id="showToCharacters"></div>
+    </section>
+
+
+    <footer>
+      <section id="prueba">
+        <!-- <img src="imagenes/github.png" class="repositoryGit"> -->
+      </section>
+    </footer>
+    <div id="root"></div>
+    <script src="https://kit.fontawesome.com/92405dc353.js" crossorigin="anonymous"></script>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
