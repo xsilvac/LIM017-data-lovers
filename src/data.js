@@ -8,6 +8,11 @@ export const filterDataProducer = (data, filterProducer) => {
   return resultByProducer;
 };
 
+export const filterTitle = (data, x, y) => {
+  const resultFilterTitle = data.filter(item => item[x].toLowerCase().includes(y.toLowerCase()));
+  return resultFilterTitle;
+}
+
 export const sortData = (data, sortBy, sortOrder) => {
   const resultOrder = data.sort((a, b) => {
     if (a[sortBy] < b[sortBy]) {
@@ -25,13 +30,8 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
   return resultOrder, resultOrder.reverse();
 }
-
-export const filterTitle = (data, x, y) => {
-  const resultFilterTitle = data.filter(item => item[x].toLowerCase().includes(y.toLowerCase()));
-  return resultFilterTitle;
+export const joinCharacter = (data) => {
+  const dataPersonajes = data.map((x) => x.people);
+  const totalPersonajes = dataPersonajes.reduce((y, el) => y.concat(el), []);
+  return totalPersonajes;
 }
-
-    // export const filterDataCharacters = (data, filterCharacters) => {
-    //   const resultByCharacters= data.filter(y => y.people === filterCharacters);
-    //   return resultByCharacters;
-    // 
