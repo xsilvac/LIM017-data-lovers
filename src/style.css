@@ -69,7 +69,12 @@ video {
 #thirdPage {
     display: none;
 }
-
+#fourtPage{
+    display: none;
+}
+#fifthPage{
+    display: none;
+}
 #navigationBar{
     position: absolute;
     left: 80%;
@@ -155,6 +160,18 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
+#showToVehicles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#showToLocations{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .containerCharacters{
     top:100%;
     padding: 0;
@@ -170,6 +187,16 @@ footer {
 }
 #veremos{
     padding: 0;
+}
+.posterVehicles{
+    width: 500px;
+    height: 260px;
+    transition: all 0.2s;
+}
+.posterLocations{
+    width: 300px;
+    height: 260px;
+    transition: all 0.2s;
 }
 /* #probemos{
     display: flex;
