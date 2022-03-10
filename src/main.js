@@ -1,4 +1,4 @@
-import {filterDataDirector,filterDataProducer,sortData,filterTitle, joinCharacter, joinVehicles, joinLocations} from "./data.js";
+import {filterDataDirector,filterDataProducer,sortData,filterTitle, joinCharacter, joinVehicles, joinLocations, filterDataByGender} from "./data.js";
 
 
 import data from "./data/ghibli/ghibli.js";
@@ -105,7 +105,12 @@ const showInScreenTwo = (y) => {
     })
 }
 showInScreenTwo(joinCharacter(allMovies));
-
+//Filtrar por genero
+const filterGender = document.getElementById("filterGender");
+filterGender.addEventListener("change", (x) => {
+  const selectedGender = filterDataByGender(joinCharacter(allMovies), x.target.value);
+  showInScreenTwo(selectedGender);
+});
 //boton para la hoja de vehiculos
 const vehicles = document.getElementById("vehicles");
 vehicles.addEventListener("click", () => {
