@@ -1,7 +1,9 @@
 import {filterDataDirector,filterDataProducer,sortData,filterTitle, joinCharacter} from "./data.js";
 
-
 import data from "./data/ghibli/ghibli.js";
+
+const hiddenNav1 = document.getElementById("main-header");
+hiddenNav1.classList.add("oculto");
 
 const hiddenFooter = document.querySelector("footer");
 hiddenFooter.classList.add("oculto");
@@ -15,6 +17,7 @@ btn.addEventListener("click", () => {
   document.getElementById("secondPage").style.display = "block";
   hiddenFooter.classList.remove("oculto");
   hiddenNav.classList.remove("oculto");
+  hiddenNav1.classList.remove("oculto");
 });
 
 let allMovies = data.films;

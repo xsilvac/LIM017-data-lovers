@@ -1,53 +1,18 @@
-// // import { filterData, sortData, computeStats } from '../src/data.js';
+ import { filterDataDirector } from '../src/data.js';
+
+ const datatest = [
+       { "title": "Porco Rosso",
+         "director": "Hayao Miyazaki"
+       },
+       { "title": "Grave of the Fireflies",
+       "director": "Isao Takahata"},
+ ]
+
+ describe('filterDataDirector', () => {
+   it('devolver las animaciones según el director', () => {
+     expect(filterDataDirector(datatest, "director")).toEqual(datatest.arrayContainingdatatest("Hayao Miyazaki"));
+   });
+ });
 
 
-// // describe('filterData', () => {
-// //   it('is a function', () => {
-// //     expect(typeof filterData).toBe('function');
-// //   });
 
-// //   it('returns `filterData by title`', () => {
-// //     expect(filterData(data.films[0])).toBe("Kiki's Delivery Service");
-// //   });
-// // });
-
-
-// //  describe('sortData', () => {
-// //    it('is a function', () => {
-// //      expect(typeof anotherExample).toBe('function');
-// //    });
-
-// describe('filterData', () => {
-//   it('is a function', () => {
-//     expect(typeof filterData).toBe('function');
-//   });
-
-//   it('returns `filterData by title`', () => {
-//     expect(filterData(data.title[0])).toBe("Kiki's Delivery Service");
-//   });
-// });
-
-// describe('sortData', () => {
-//    it('is a function', () => {
-//      expect(typeof anotherExample).toBe('function');
-//    });
-
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
-
-
-// describe('computeStats', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
-
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
-//   it('returns `filterData by title`', () => {
-//     expect(filterData(data.films[0])).toBe("Kiki's Delivery Service");
-//   });
-// });

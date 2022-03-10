@@ -4,15 +4,15 @@ export const filterDataDirector = (data, filterDirector) => {
 };
 
 
-export const dataOrder = (data, order) => {
-  let titleSort = data.sort((a, z)=>{
-   return (a.title > z.title) ? 1:-1;
-   })
-   if(order === "ascendente"){titleSort}
-   if(order === "descendente"){titleSort.reverse()}
+// export const dataOrder = (data, order) => {
+//   let titleSort = data.sort((a, z)=>{
+//    return (a.title > z.title) ? 1:-1;
+//    })
+//    if(order === "ascendente"){titleSort}
+//    if(order === "descendente"){titleSort.reverse()}
 
-   return titleSort;
-}
+//    return titleSort;
+// }
 
 export const filterDataProducer = (data, filterProducer) => {
   const resultByProducer = data.filter(y => y.producer === filterProducer);

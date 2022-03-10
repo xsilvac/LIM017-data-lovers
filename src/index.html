@@ -4,26 +4,47 @@
 <head>
   <meta charset="utf-8">
   <title>FanGhibli</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="imagenes/logo fanGhibli.ico" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/fonts.css">
 </head>
+
+<header id="main-header"> 
+  <div class="menu_bar">
+    <a href="#" class="bt_menu"><span class="icon-menu"></span>Menú</a>  
+  </div>
+  <div id="nav">
+    <img class="fondoNav" src="imagenes/fondo2.jpg">
+  </div>
+</header>
+  <!-- <nav id="sectionFilterDirector">
+    <ul>
+      <li class="submenu">
+        <a href="#"><span class="icon-cog"></span>Directors <span class="caret icon-arrow-down2"></span></a>
+        <ul class="children">
+          
+          <li><a href="#" value="Gorō Miyazaki"><span class="icon-yelp"></span>Gorō Miyazaki</a></li>
+          <li><a href="#"><span class="icon-yelp"></span>Characters</a></li>
+          <li><a href="#"><span class="icon-yelp"></span>Order by</a></li>
+          <li><a href="#"><span class="icon-yelp"></span>Order by</a></li>
+          <li><a href="#"><span class="icon-yelp"></span>Order by</a></li>
+          <li><a href="#"><span class="icon-yelp"></span>Order by</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><span class="icon-key2"></span>Producers</a></li>
+      <li><a href="#"><span class="icon-hammer"></span>Characters</a></li>
+      <li><a href="#"><span class="icon-magic-wand"></span>Order by</a></li>
+    </ul>
+  </nav> -->
+
 
 <body>
   <main>
-    <nav>
-      <div id="nav">
-        <img class="fondoNav" src="imagenes/fondo2.jpg">
-      </div>
-      <!-- <lu>
-      <a href="" class="links" >Inicio</a>
-      <a href="" class="links" >Lista de peliculas</a>
-    </lu> -->
-    </nav>
-
     <img src="imagenes/FAN GHIBLI LOGO.png" title="FAN GHIBLI" id="logo">
 
     <section class="wraper" id="firstPage">
-      <video id="coverPage" src="video/Videoportada2.mp4" controls autoplay loop></video>
+      <video id="coverPage" src="video/Video portada.mp4" controls autoplay loop></video>
       <button id="showSecondPage" type="button">Animaciones</button>
     </section>
 
@@ -31,7 +52,8 @@
       <input id="navigationBar" type="text" placeholder=" Search...">
       <i id="iconSearch" class="fa fa-search"></i>
 
-      <div id="sectionFilterDirector">
+
+        <div id="sectionFilterDirector" class="filter_1">
         <select id="filterDirector" class="filterDesign">
           <option value="empty" disabled selected>Directors</option>
           <option value="Gorō Miyazaki">Gorō Miyazaki</option>
@@ -42,7 +64,7 @@
           <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
         </select>
       </div>
-      <div id="sectionFilterProducer">
+      <div id="sectionFilterProducer" class="filter_1">
         <select id="filterProducer" class="filterDesign">
           <option value="empty" disabled selected>Producers</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
@@ -52,7 +74,7 @@
           <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
         </select>
       </div>
-      <div id="sectionFiltercharacters">
+      <div id="sectionFiltercharacters" class="filter_1">
         <button id="people" class="filterDesign">Characters</button>
         <!-- <select id="filterCharacters">
           <option value="empty" disabled selected>Personajes</option>
@@ -63,7 +85,7 @@
           <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
         </select> -->
       </div>
-      <div id="sectionOrder">
+      <div id="sectionOrder" class="filter_1">
         <select id="filterByOrder" class="filterDesign">
           <option value="empty" disabled selected>Order by</option>
           <option value="title">A - Z</option>
@@ -83,8 +105,10 @@
         <!-- <img src="imagenes/github.png" class="repositoryGit"> -->
       </section>
     </footer>
+    </main>
     <div id="root"></div>
     <script src="https://kit.fontawesome.com/92405dc353.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js" type="module"></script>
 </body>
 

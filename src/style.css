@@ -1,6 +1,89 @@
+*{
+padding: 0;
+margin: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.menu_bar{
+    display: none;
+}
+
+header {
+    /* background: #3f7f81; */
+    width:100%;
+    font-family: roboto, sans-serif;
+}
+
+header nav {
+    background: #0d6b6e;
+    z-index: 1000;
+    max-width: 1000px;
+    margin: 0 0 0 30%;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li .caret {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+header nav ul li:hover .children {
+    display: block;
+}
+
+header nav ul li .children {
+    display: none;
+    background: #7c5a11;
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+}
+
+header nav ul li .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+    display: block;
+}
+
+header nav ul li .children li a span {
+    float:right;
+    position: relative;
+    top: 2px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #1fd2ff;
+}
+
+header nav ul li a span{
+    margin-right: 10px;
+}
 .nav{
     background-color: #606060;
-    position: absolute;
+    position: relative;
     z-index: -1;
 }
 
@@ -54,6 +137,7 @@ video {
     cursor: pointer;
     text-align: center;
     border: 1px solid #fff;
+
 }
 
 #showSecondPage:hover{
@@ -138,13 +222,15 @@ footer {
     /* position: absolute; */
     top:15%;
     width: 150px;
-    color: rgb(8, 8, 8);
+    color: #fff;
     padding: 5px 15px;
     margin: 10px;
     font-size: 15px;
     border-radius: 20px;
     cursor: pointer;
-    border: 1px solid rgb(20, 20, 20);
+    border: 1px solid #3DC6C6;
+    background: #3DC6C6;
+    margin-left: 80px;
 }
 .oculto{
     display: none;
@@ -171,6 +257,12 @@ footer {
 #veremos{
     padding: 0;
 }
+
+.filter_1{
+    display: inline-block;
+    margin-left: 40px;
+}
+
 /* #probemos{
     display: flex;
     flex-direction: row;
