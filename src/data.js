@@ -46,3 +46,17 @@ export const joinCharacter = (data) => {
   const totalPersonajes = dataPersonajes.reduce((y, el) => y.concat(el), []);
   return totalPersonajes;
 }
+export const filterDataByGender = (data, filterGender) => {
+  const resultByGender = data.filter(y => y.gender === filterGender);
+  return resultByGender;
+};
+export const joinVehicles = (data) => {
+  const dataVehicles = data.map((x) => x.vehicles);
+  const totalVehicles = dataVehicles.reduce((y, el) => y.concat(el), []);
+  return totalVehicles;
+}
+export const joinLocations = (data) => {
+  const dataLocations = data.map((x) => x.locations);
+  const totalLocations = dataLocations.reduce((y, el) => y.concat(el), []);
+  return totalLocations;
+}
