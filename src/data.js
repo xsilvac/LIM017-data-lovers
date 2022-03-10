@@ -19,44 +19,44 @@ export const filterDataProducer = (data, filterProducer) => {
   return resultByProducer;
 };
 
-export const filterTitle = (data, x, y) => {
-  const resultFilterTitle = data.filter(item => item[x].toLowerCase().includes(y.toLowerCase()));
-  return resultFilterTitle;
-}
+// export const filterTitle = (data, x, y) => {
+//   const resultFilterTitle = data.filter(item => item[x].toLowerCase().includes(y.toLowerCase()));
+//   return resultFilterTitle;
+// }
 
-export const sortData = (data, sortBy, sortOrder) => {
-  const resultOrder = data.sort((a, b) => {
-    if (a[sortBy] > b[sortBy]) {
-      return -1;
-    }
-    else if (a[sortBy] < b[sortBy]) {
-      return 1;
-    }
-    else {
-      return 0;
-    }
-  });
-  if (sortOrder === "titleDescending") {
-    return resultOrder.reverse();
-  }
-  return resultOrder, resultOrder.reverse();
-}
-export const joinCharacter = (data) => {
-  const dataPersonajes = data.map((x) => x.people);
-  const totalPersonajes = dataPersonajes.reduce((y, el) => y.concat(el), []);
-  return totalPersonajes;
-}
-export const filterDataByGender = (data, filterGender) => {
-  const resultByGender = data.filter(y => y.gender === filterGender);
-  return resultByGender;
-};
-export const joinVehicles = (data) => {
-  const dataVehicles = data.map((x) => x.vehicles);
-  const totalVehicles = dataVehicles.reduce((y, el) => y.concat(el), []);
-  return totalVehicles;
-}
-export const joinLocations = (data) => {
-  const dataLocations = data.map((x) => x.locations);
-  const totalLocations = dataLocations.reduce((y, el) => y.concat(el), []);
-  return totalLocations;
-}
+// export const sortData = (data, sortBy, sortOrder) => {
+//   const resultOrder = data.sort((a, b) => {
+//     if (a[sortBy] > b[sortBy]) {
+//       return -1;
+//     }
+//     else if (a[sortBy] < b[sortBy]) {
+//       return 1;
+//     }
+//     else {
+//       return 0;
+//     }
+//   });
+//   if (sortOrder === "titleDescending") {
+//     return resultOrder.reverse();
+//   }
+//   return resultOrder, resultOrder.reverse();
+// }
+// export const joinCharacter = (data) => {
+//   const dataPersonajes = data.map((x) => x.people);
+//   const totalPersonajes = dataPersonajes.reduce((y, el) => y.concat(el), []);
+//   return totalPersonajes;
+// }
+// export const filterDataByGender = (data, filterGender) => {
+//   const resultByGender = data.filter(y => y.gender === filterGender);
+//   return resultByGender;
+// };
+// export const joinVehicles = (data) => {
+//   const dataVehicles = data.map((x) => x.vehicles);
+//   const totalVehicles = dataVehicles.reduce((y, el) => y.concat(el), []);
+//   return totalVehicles;
+// }
+// export const joinLocations = (data) => {
+//   const dataLocations = data.map((x) => x.locations);
+//   const totalLocations = dataLocations.reduce((y, el) => y.concat(el), []);
+//   return totalLocations;
+// }
