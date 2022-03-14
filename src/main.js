@@ -1,24 +1,25 @@
-import {filterDataDirector,filterDataProducer,sortData,filterTitle, joinCharacter, joinVehicles, joinLocations, filterDataByGender} from "./data.js";
+import {filterDataDirector,filterDataProducer,sortData,filterTitleSearch, joinCharacter, joinVehicles, joinLocations, filterDataByGender} from "./data.js";
 
 import data from "./data/ghibli/ghibli.js";
 
 const hiddenNav1 = document.getElementById("main-header");
-hiddenNav1.classList.add("oculto");
+hiddenNav1.classList.add("hiden");
 
 const hiddenFooter = document.querySelector("footer");
-hiddenFooter.classList.add("oculto");
+hiddenFooter.classList.add("hiden");
 
 const hiddenNav = document.getElementById("nav");
-hiddenNav.classList.add("oculto");
+hiddenNav.classList.add("hiden");
 
 const btn = document.getElementById("showSecondPage");
 btn.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "block";
-  hiddenFooter.classList.remove("oculto");
-  hiddenNav.classList.remove("oculto");
-  hiddenNav1.classList.remove("oculto");
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
+  hiddenNav1.classList.remove("hiden");
 });
+
 //mostrar pagina principal
 let allMovies = data.films;
 let printFilms = document.getElementById("listOfFilms");
@@ -36,6 +37,7 @@ const showInScreen = (y) => {
     printFilms.innerHTML += moviesToShow(z);
   });
 };
+
 showInScreen(allMovies);
 //filtrar por director
 const filterDirector = document.getElementById("filterDirector");
@@ -43,34 +45,37 @@ filterDirector.addEventListener("change", (x) => {
   const selectedDirector = filterDataDirector(allMovies, x.target.value);
   showInScreen(selectedDirector);
 });
+
 //Filtrar por productor
 const filterProducer = document.getElementById("filterProducer");
 filterProducer.addEventListener("change", (x) => {
   const selectedProducer = filterDataProducer(allMovies, x.target.value);
   showInScreen(selectedProducer);
 });
+
 //Ordenar A-Z y de Z-A
 const filterByOrder = document.getElementById("sectionOrder");
 filterByOrder.addEventListener("change", (x) => {
   const selectedOrder = sortData(allMovies, x.target.value, x.target.value);
   showInScreen(selectedOrder);
 });
+
 //filtrar pelicula
 const navigationBar = document.querySelector("#navigationBar");
 navigationBar.addEventListener("keyup", () => {
-  const searchText = filterTitle(allMovies,"title",navigationBar.value.toLowerCase());
+  const searchText = filterTitleSearch(allMovies,"title",navigationBar.value.toLowerCase());
   showInScreen(searchText);
 });
+
 //boton para la hoja de personajes
 const peoples = document.getElementById("people");
 peoples.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "none";
   document.getElementById("thirdPage").style.display = "block";
-  hiddenFooter.classList.remove("oculto");
-  hiddenNav.classList.remove("oculto");
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
 });
-
 
 // for (let people of joinCharacter(allMovies)) {
 //   showToCharacters.innerHTML += `
@@ -100,7 +105,8 @@ let charactersToShow = (people) =>{
     <p class="pCharacters" id="specie">Specie: ${people.specie}</p>
     </div>
 </section>`
-}
+};
+
 const showInScreenTwo = (y) => {
     showToCharacters.innerHTML = "";
     y.forEach((z) => {
@@ -108,12 +114,14 @@ const showInScreenTwo = (y) => {
     })
 }
 showInScreenTwo(joinCharacter(allMovies));
+
 //Filtrar por genero
 const filterGender = document.getElementById("filterGender");
 filterGender.addEventListener("change", (x) => {
   const selectedGender = filterDataByGender(joinCharacter(allMovies), x.target.value);
   showInScreenTwo(selectedGender);
 });
+
 //boton para la hoja de vehiculos
 const vehicles = document.getElementById("vehicles");
 vehicles.addEventListener("click", () => {
@@ -121,9 +129,10 @@ vehicles.addEventListener("click", () => {
   document.getElementById("secondPage").style.display = "none";
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "block";
-  hiddenFooter.classList.remove("oculto");
-  hiddenNav.classList.remove("oculto");
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
 });
+
 //mostrar vehiculos
 const showToVehicles = document.getElementById("showToVehicles");
 showToVehicles.innerHTML = "";
@@ -139,7 +148,8 @@ let vehiclesToShow = (vehicles) =>{
   <p class="pCharacters" id="pilot">Pilot: ${vehicles.pilot.name}</p>
   </div>
 </section>`
-}
+};
+
 const showInScreenThree = (y) => {
   showToVehicles.innerHTML = "";
   y.forEach((z) => {
@@ -157,8 +167,8 @@ locations.addEventListener("click", () => {
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "none";
   document.getElementById("fifthPage").style.display = "block";
-  hiddenFooter.classList.remove("oculto");
-  hiddenNav.classList.remove("oculto");
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
 });
 //mostrar vehiculos
 const showToLocations = document.getElementById("showToLocations");
@@ -182,3 +192,4 @@ const showInScreenFour = (y) => {
   })
 }
 showInScreenFour(joinLocations(allMovies));
+
