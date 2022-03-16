@@ -17,10 +17,11 @@ header {
 }
 
 header nav {
-    background: #0d6b6e;
+    background: #fff;
     z-index: 1000;
-    max-width: 1000px;
-    margin: 0 0 0 30%;
+    max-width: 100%;
+    margin-top: -5px;
+    box-shadow: 1px 1px 0px rgb(148, 147, 147);
 }
 header nav ul {
     list-style: none;
@@ -68,14 +69,14 @@ header nav ul li .children li a span {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #0A3D63;
     display: block;
     text-decoration: none;
     padding: 10px;
 }
 
 header nav ul li a:hover {
-    background-color: #1fd2ff;
+    background-color: #5BA0DE;
 }
 
 header nav ul li a span{
@@ -101,7 +102,7 @@ body {
 #logo {
     position: absolute;
     margin: 0;
-    bottom: 78%;
+    bottom: 80%;
 }
 
 video {
@@ -166,14 +167,14 @@ video {
     padding: 6px 6px;
     font-size: 15px;
     border-radius: 10px;
-    border: 1px solid rgba(158,158,255,1);
+    border: 1px solid #5BA0DE;
 }
 
 #iconSearch{
     position: absolute;
-    left:93%;
+    left:83%;
     top:64px;
-    color: rgba(158,158,255,1);
+    color: #5BA0DE;
 }
 
 footer {

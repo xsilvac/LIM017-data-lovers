@@ -15,16 +15,16 @@
     <a href="#" class="bt_menu"><span class="icon-menu"></span>Menú</a> 
   </div>
   <div id="nav">
-    <img class="fondoNav" src="imagenes/fondo2.jpg">
+    <img class="fondoNav" src="imagenes/fondo1prueba.jpg">
   </div>
-</header>
-  <!-- <nav id="sectionFilterDirector">
+
+   <nav>
     <ul>
       <li class="submenu">
         <a href="#"><span class="icon-cog"></span>Directors <span class="caret icon-arrow-down2"></span></a>
         <ul class="children">
-          <li><a href="#" value="Gorō Miyazaki"><span class="icon-yelp"></span>Gorō Miyazaki</a></li>
-          <li><a href="#"><span class="icon-yelp"></span>Characters</a></li>
+          <li><a href="#"><span class="icon-yelp"></span>Gorō Miyazaki</a></li>
+          <li><a href="#" ><span class="icon-yelp"></span>Characters</a></li>
           <li><a href="#"><span class="icon-yelp"></span>Order by</a></li>
           <li><a href="#"><span class="icon-yelp"></span>Order by</a></li>
           <li><a href="#"><span class="icon-yelp"></span>Order by</a></li>
@@ -32,25 +32,26 @@
         </ul>
       </li>
       <li><a href="#"><span class="icon-key2"></span>Producers</a></li>
-      <li><a href="#"><span class="icon-hammer"></span>Characters</a></li>
+      <li><a href="#" id="people"><span class="icon-hammer"></span>Characters</a></li>
+      <li><a href="#" id="vehicles"><span class="icon-hammer"></span>Vehicles</a></li>
+      <li><a href="#" id="locations"><span class="icon-hammer"></span>Locations</a></li>
       <li><a href="#"><span class="icon-magic-wand"></span>Order by</a></li>
     </ul>
-  </nav> -->
-
+  </nav>
+</header>
 
 <body>
   <main>
-    <img src="imagenes/FAN GHIBLI LOGO.png" title="FAN GHIBLI" id="logo">
+    <img src="imagenes/logo-07-07.png" title="FAN GHIBLI" id="logo">
 
     <section class="wraper" id="firstPage">
-      <video id="coverPage" src="video/Video portada.mp4" controls autoplay loop></video>
+      <!-- <video id="coverPage" src="video/Video portada.mp4" controls autoplay loop></video> -->
       <button id="showSecondPage" type="button">Animaciones</button>
     </section>
 
     <section id="secondPage">
       <input id="navigationBar" type="text" placeholder=" Search...">
       <i id="iconSearch" class="fa fa-search"></i>
-
 
         <div id="sectionFilterDirector" class="filter_1">
         <select id="filterDirector" class="filterDesign">
@@ -73,12 +74,7 @@
           <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
         </select>
       </div>
-      <div id="sectionFiltercharacters">
-        <button id="people" class="filterDesign">Characters</button><br>
-        <button id="vehicles" class="filterDesign">Vehicles</button><br>
-        <button id="locations" class="filterDesign">Locations</button>
-
-      </div>
+    
       <div id="sectionOrder" class="filter_1">
         <select id="filterByOrder" class="filterDesign">
           <option value="empty" disabled selected>Order by</option>

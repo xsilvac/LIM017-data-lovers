@@ -82,7 +82,7 @@ describe('joinCharacter', () => {
   });
 });
 
-//Filtrar por genero  -filterDataByGender-
+//Filtrar personajes por genero  -filterDataByGender-
 
 const charactersByGender = {
   "films": [{"title": "Castle in the Sky",
@@ -100,7 +100,7 @@ describe('filterDataByGender', () => {
 });
 });
 
-// Filtrar por vehículos -joinVehicles-
+// Filtrar vehículos -joinVehicles-
 const vehicles = {
   "films": [{"title": "Castle in the Sky",
               "vehicles": [{"name": "Air Destroyer Goliath"}]},
@@ -115,7 +115,7 @@ describe('joinVehicles', () => {
 });
 });
 
-// Filtrar por Locaciones  joinLocations
+// Filtrar Locaciones  joinLocations
 const locations = {
   "films": [{"title": "Castle in the Sky",
               "locations": [{"name": "Gondoa"}]},

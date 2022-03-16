@@ -43,6 +43,7 @@ showInScreen(allMovies);
 const filterDirector = document.getElementById("filterDirector");
 filterDirector.addEventListener("change", (x) => {
   const selectedDirector = filterDataDirector(allMovies, x.target.value);
+  console.log("Hola", selectedDirector)
   showInScreen(selectedDirector);
 });
 

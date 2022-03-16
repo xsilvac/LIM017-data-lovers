@@ -3,17 +3,6 @@ export const filterDataDirector = (data, filterDirector) => {
   return resultByDirector;
 };
 
-
- /* export const dataOrder = (data, order) => {
-   let titleSort = data.sort((a, z)=>{
-    return (a.title > z.title) ? 1:-1;
-    })
-    if(order === "ascendente"){titleSort}
-    if(order === "descendente"){titleSort.reverse()}
-
-    return titleSort;
- }; */
-
 export const filterDataProducer = (data, filterProducer) => {
   const resultByProducer = data.filter(y => y.producer === filterProducer);
   return resultByProducer;
@@ -21,17 +10,14 @@ export const filterDataProducer = (data, filterProducer) => {
 
  export const filterTitleSearch = (data, x, y) => {
   const resultFilterTitle = data.filter(item => item[x].toLowerCase().includes(y.toLowerCase()));
- // el parametro y no tenía información por eso eliminé (y).includes
   return resultFilterTitle;
   
 };
-
 
 export const sortData = (data, sortOrder)=>{
   let titleSort = data.sort((a,z)=>{
     return (a.title > z.title) ? -1:1;
   })
-  // console.log(titleSort)
   if(sortOrder === 'titleDescending'){titleSort.reverse()}
   return titleSort, titleSort.reverse();
 }
