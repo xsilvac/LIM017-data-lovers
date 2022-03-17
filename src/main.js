@@ -2,6 +2,17 @@ import {filterDataDirector,filterDataProducer,sortData,filterTitleSearch, joinCh
 
 import data from "./data/ghibli/ghibli.js";
 
+const logoSecondPage = document.getElementById("logo");
+logoSecondPage.addEventListener("click", () => {
+  document.getElementById("secondPage").style.display = "block";
+  document.getElementById("firstPage").style.display = "none";
+  document.getElementById("thirdPage").style.display = "none";
+  document.getElementById("fourtPage").style.display = "none";
+  document.getElementById("fifthPage").style.display = "none";
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
+});
+
 const hiddenNav1 = document.getElementById("main-header");
 hiddenNav1.classList.add("hiden");
 
@@ -43,7 +54,6 @@ showInScreen(allMovies);
 const filterDirector = document.getElementById("filterDirector");
 filterDirector.addEventListener("change", (x) => {
   const selectedDirector = filterDataDirector(allMovies, x.target.value);
-  console.log("Hola", selectedDirector)
   showInScreen(selectedDirector);
 });
 
@@ -139,7 +149,7 @@ const showToVehicles = document.getElementById("showToVehicles");
 showToVehicles.innerHTML = "";
 let vehiclesToShow = (vehicles) =>{
   return`
-  <section class = "containerCharacters" id="${vehicles.id}">
+  <section class = "containerVehicles" id="${vehicles.id}">
   <img src= "${vehicles.img}" class= "posterVehicles"/>
   <div id="veremos1">
   <p class="pCharacters" id="name">Name: ${vehicles.name}</p>
