@@ -57,6 +57,19 @@ filterDirector.addEventListener("change", (x) => {
   showInScreen(selectedDirector);
 });
 
+//Filtrar por director en menu Hijos
+ const menuChildren = document.getElementById("children");
+menuChildren.addEventListener("click", (x) => {
+ console.log("LISTAAA");
+ const target = x.target;
+ const hijos = document.querySelectorAll("btn")
+ hijos.addEventListener("change", () => {
+  const selectedDirect = filterDataProducer(allMovies, target);
+  console.log("HOLAAA", selectedDirect, target);
+  showInScreen(selectedDirect);
+})
+});
+
 //Filtrar por productor
 const filterProducer = document.getElementById("filterProducer");
 filterProducer.addEventListener("change", (x) => {
