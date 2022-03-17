@@ -57,18 +57,27 @@ filterDirector.addEventListener("change", (x) => {
   showInScreen(selectedDirector);
 });
 
-//Filtrar por director en menu Hijos
- const menuChildren = document.getElementById("children");
-menuChildren.addEventListener("click", (x) => {
- console.log("LISTAAA");
- const target = x.target;
- const hijos = document.querySelectorAll("btn")
+
+const moviesGoroM = document.getElementById("Gorō Miyazaki");
+moviesGoroM.addEventListener("click", (filterDirector));
+
+
+/* //Filtrar por director en menu Hijos
+ const hijo = document.querySelectorAll("ul.children > li > a.btn");
+ for (unHijo of hijo) {
+    unHijo.addEventListener("click", (x) => {
+    const hijos = x.target;
+    console.log("Se hizo click en", hijos);
+    console.log("Texto del enlace:", hijos.innerText);
+ }); */
+
+ /* const hijos = document.querySelectorAll("btn")
  hijos.addEventListener("change", () => {
   const selectedDirect = filterDataProducer(allMovies, target);
   console.log("HOLAAA", selectedDirect, target);
   showInScreen(selectedDirect);
 })
-});
+}); */
 
 //Filtrar por productor
 const filterProducer = document.getElementById("filterProducer");
