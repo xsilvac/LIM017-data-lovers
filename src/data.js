@@ -53,7 +53,7 @@ export const dataOrderCharacter = (data, order) => {
   if (order === "des") { characterSort.reverse() }
   return characterSort;
 };
-// por titulo
+// por nombre
 export const filterName = (data, x, a) => {
   const resultFilterName = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
   return resultFilterName;
@@ -69,4 +69,10 @@ export const joinLocations = (data) => {
   const dataLocations = data.map((x) => x.locations);
   const totalLocations = dataLocations.reduce((y, el) => y.concat(el), []);
   return totalLocations;
+}
+
+//filtrar por nombre de locacion
+export const filterNameLocations = (data, x, a) => {
+  const resultFilterLocation = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
+  return resultFilterLocation;
 }

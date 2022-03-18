@@ -155,7 +155,7 @@
     #fifthPage{
         display: none;
     }
-    #navigationBar{
+    .navigation{
         position: absolute;
         left: 80%;
         top:9%;
