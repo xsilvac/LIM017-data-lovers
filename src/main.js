@@ -1,6 +1,11 @@
+
 import {
   filterDataDirector, filterDataProducer, sortData, filterTitle, joinCharacter, joinVehicles, joinLocations,
   filterDataByGender, filterDataSpecie, dataOrderCharacter, filterName, filterNameLocations} from "./data.js";
+
+import {filterDataDirector,filterDataProducer,sortData,filterTitleSearch, joinCharacter, joinVehicles, joinLocations, filterDataByGender} from "./data.js";
+
+
 import data from "./data/ghibli/ghibli.js";
 
 const logoSecondPage = document.getElementById("logo");
@@ -14,10 +19,16 @@ logoSecondPage.addEventListener("click", () => {
   hiddenNav.classList.remove("hiden");
 });
 
+
+const hiddenNav1 = document.getElementById("main-header");
+hiddenNav1.classList.add("hiden");
+
+
 const hiddenNav1 = document.getElementById("main-header");
 hiddenNav1.classList.add("hiden");
 const hiddenFooter = document.querySelector("footer");
 hiddenFooter.classList.add("hiden");
+
 const hiddenNav = document.getElementById("nav");
 hiddenNav.classList.add("hiden");
 
@@ -29,6 +40,7 @@ btn.addEventListener("click", () => {
   hiddenNav.classList.remove("hiden");
   hiddenNav1.classList.remove("hiden");
 });
+
 //mostrar pagina principal
 let allMovies = data.films;
 let printFilms = document.getElementById("listOfFilms");
@@ -45,6 +57,7 @@ const showInScreen = (y) => {
     printFilms.innerHTML += moviesToShow(z);
   });
 };
+
 showInScreen(allMovies);
 
 let informationModal = (m) => {
@@ -88,22 +101,55 @@ filterDirector.addEventListener("change", (x) => {
   const selectedDirector = filterDataDirector(allMovies, x.target.value);
   showInScreen(selectedDirector);
 });
+
+
+const moviesGoroM = document.getElementById("Gorō Miyazaki");
+moviesGoroM.addEventListener("click", (filterDirector));
+
+
+/* //Filtrar por director en menu Hijos
+ const hijo = document.querySelectorAll("ul.children > li > a.btn");
+ for (unHijo of hijo) {
+    unHijo.addEventListener("click", (x) => {
+    const hijos = x.target;
+    console.log("Se hizo click en", hijos);
+    console.log("Texto del enlace:", hijos.innerText);
+ }); */
+
+ /* const hijos = document.querySelectorAll("btn")
+ hijos.addEventListener("change", () => {
+  const selectedDirect = filterDataProducer(allMovies, target);
+  console.log("HOLAAA", selectedDirect, target);
+  showInScreen(selectedDirect);
+})
+}); */
+
 //Filtrar por productor
 const filterProducer = document.getElementById("filterProducer");
 filterProducer.addEventListener("change", (x) => {
   const selectedProducer = filterDataProducer(allMovies, x.target.value);
   showInScreen(selectedProducer);
 });
+
 //Ordenar A-Z y de Z-A
 const filterByOrder = document.getElementById("sectionOrder");
 filterByOrder.addEventListener("change", (x) => {
   const selectedOrder = sortData(allMovies, x.target.value, x.target.value);
   showInScreen(selectedOrder);
 });
+
 //Buscar titulo de la pelicula
 const navigationBar = document.querySelector("#navigationBar");
 navigationBar.addEventListener("keyup", () => {
   const searchText = filterTitle(allMovies, "title", navigationBar.value.toLowerCase());
+  showInScreen(searchText);
+});
+
+
+//filtrar pelicula
+const navigationBar = document.querySelector("#navigationBar");
+navigationBar.addEventListener("keyup", () => {
+  const searchText = filterTitleSearch(allMovies,"title",navigationBar.value.toLowerCase());
   showInScreen(searchText);
 });
 
@@ -117,6 +163,21 @@ peoples.addEventListener("click", () => {
   hiddenFooter.classList.remove("hiden");
   hiddenNav.classList.remove("hiden");
 });
+
+
+// for (let people of joinCharacter(allMovies)) {
+//   showToCharacters.innerHTML += `
+//     <section class = "containerCharacters" id="[${people.id}]">
+//     <img src= "${people.img}" class= "poster"/>
+//     <p id="name">${people.name}</p>
+//     <p id="gender">${people.gender}</p>
+//     <p id="age">${people.age}</p>
+//     <p id="eye_color">${people.eye_color}</p>
+//     <p id="hair_color">${people.hair_color}</p>
+//     <p id="specie">${people.specie}</p>
+// </section>`;
+// }
+
 //mostrar personajes
 const showToCharacters = document.getElementById("showToCharacters");
 showToCharacters.innerHTML = "";
@@ -133,7 +194,8 @@ let charactersToShow = (people) => {
     <p class="pCharacters" id="specie"><b>Specie</b>: ${people.specie}</p>
     </div>
 </section>`
-}
+};
+
 const showInScreenTwo = (y) => {
   showToCharacters.innerHTML = "";
   y.forEach((z) => {
@@ -141,12 +203,14 @@ const showInScreenTwo = (y) => {
   })
 }
 showInScreenTwo(joinCharacter(allMovies));
+
 //Filtrar por genero
 const filterGender = document.getElementById("filterGender");
 filterGender.addEventListener("change", (x) => {
   const selectedGender = filterDataByGender(joinCharacter(allMovies), x.target.value);
   showInScreenTwo(selectedGender);
 });
+
 //Filtrar por especie
 const filterSpecie = document.querySelector("#filterSpecie");
 filterSpecie.addEventListener("change", (x) => {
@@ -166,6 +230,7 @@ searchName.addEventListener("keyup", () => {
   showInScreenTwo(searchCharacter);
 })
 
+
 //boton para la hoja de vehiculos
 const vehicles = document.getElementById("vehicles");
 vehicles.addEventListener("click", () => {
@@ -176,12 +241,19 @@ vehicles.addEventListener("click", () => {
   hiddenFooter.classList.remove("hiden");
   hiddenNav.classList.remove("hiden");
 });
+
 //mostrar vehiculos
 const showToVehicles = document.getElementById("showToVehicles");
 showToVehicles.innerHTML = "";
+
 let vehiclesToShow = (vehicles) => {
   return `
   <section class = "containerCharacters" id="${vehicles.id}">
+
+let vehiclesToShow = (vehicles) =>{
+  return`
+  <section class = "containerVehicles" id="${vehicles.id}">
+
   <img src= "${vehicles.img}" class= "posterVehicles"/>
   <div id="veremos1">
   <h1 class="pCharacters" id="name"><b>Name</b>: ${vehicles.name}</h1>
@@ -191,7 +263,8 @@ let vehiclesToShow = (vehicles) => {
   <p class="pCharacters" id="pilot"><b>Pilot</b>: ${vehicles.pilot.name}</p>
   </div>
 </section>`
-}
+};
+
 const showInScreenThree = (y) => {
   showToVehicles.innerHTML = "";
   y.forEach((z) => {
@@ -237,8 +310,10 @@ showInScreenFour(joinLocations(allMovies));
 
 
 
+
 const searchLocations = document.getElementById("searchLocations");
 searchLocations.addEventListener("keyup", () => {
   const searchNameLocations = filterNameLocations(joinLocations(allMovies), "name", searchLocations.value.toLowerCase());
   showInScreenFour(searchNameLocations);
 })
+
