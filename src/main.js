@@ -58,8 +58,19 @@ filterDirector.addEventListener("change", (x) => {
 });
 
 
-const moviesGoroM = document.getElementById("Gorō Miyazaki");
-moviesGoroM.addEventListener("click", (filterDirector));
+/* const moviesGoroM = document.getElementById("Gorō Miyazaki");
+moviesGoroM.addEventListener("click", (filterDirector)); */
+
+
+const prueba = document.querySelector("#children");
+prueba.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    const selectedDirector = filterDataDirector(allMovies, e.target);
+  showInScreen(selectedDirector);
+    // btn clickeado, invoka el filtro
+  console.log("Holaaa", prueba)
+  } return prueba
+});
 
 
 /* //Filtrar por director en menu Hijos

@@ -1742,7 +1742,7 @@ export default {
         {
           "id": "0cb26464-3416-4490-8f42-cd9d7276884e",
           "name": "Kōichi",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/4/49/Sosuke%27s_Father.png",
+          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/K%C5%8Dichi.jpg",
           "gender": "Male",
           "age": "30",
           "eye_color": "Dark brown",

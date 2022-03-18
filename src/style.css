@@ -1,10 +1,10 @@
 *{
-padding: 0;
-margin: 0;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-font-family: roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
 }
 
 .menu_bar{
@@ -301,7 +301,7 @@ video {
     display:flex;
 } */
 
- .repositoryGit{
+.repositoryGit{
     max-width: 6%;
     color: #fff;
     position: relative;
@@ -389,22 +389,23 @@ nav{
     color: #5BA0DE;
 }
 #navigationBar {
-left: 450px;
-top: 19px;
-padding: 2px;
-font-size: 12px;
-border-radius: 10px;
-border: 1px solid #5BA0DE;
-width: 90px;
+    left: 450px;
+    top: 19px;
+    padding: 2px;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 1px solid #5BA0DE;
+    width: 90px;
 }
 #coverPage {
 height: 32%;
     }
 .filterDesign{
-font-size: 12px;
-width: 130px;
-display: flex;
-flex-direction: row;
+    font-size: 12px;
+    width: 95px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
 }
 p{
     font-size: 9px;
