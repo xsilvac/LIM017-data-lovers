@@ -4,20 +4,31 @@ import {
 } from "./data.js";
 import data from "./data/ghibli/ghibli.js";
 
+const logoSecondPage = document.getElementById("logo");
+logoSecondPage.addEventListener("click", () => {
+  document.getElementById("secondPage").style.display = "block";
+  document.getElementById("firstPage").style.display = "none";
+  document.getElementById("thirdPage").style.display = "none";
+  document.getElementById("fourtPage").style.display = "none";
+  document.getElementById("fifthPage").style.display = "none";
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
+});
+
 const hiddenNav1 = document.getElementById("main-header");
-hiddenNav1.classList.add("oculto");
+hiddenNav1.classList.add("hiden");
 const hiddenFooter = document.querySelector("footer");
-hiddenFooter.classList.add("oculto");
+hiddenFooter.classList.add("hiden");
 const hiddenNav = document.getElementById("nav");
-hiddenNav.classList.add("oculto");
+hiddenNav.classList.add("hiden");
 
 const btn = document.getElementById("showSecondPage");
 btn.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "block";
-  hiddenFooter.classList.remove("oculto");
-  hiddenNav.classList.remove("oculto");
-  hiddenNav1.classList.remove("oculto");
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
+  hiddenNav1.classList.remove("hiden");
 });
 //mostrar pagina principal
 let allMovies = data.films;
@@ -43,16 +54,15 @@ let informationModal = (m) => {
     <p class="close">X</p>
     <img src= "${m.poster}" class= "poster"/>
     <div id= "informationOfMovies" class="modalsDiv">
-      <h1 id="title"><b>Title:</b> ${m.title}</h1>
-      <p id="director"><b>Director:</b> ${m.director}</p>
-      <p id="description"><b>Description:</b> ${m.description}</p>
-      <p id="release_date"><b>Release date:</b> ${m.release_date}</p>
-      <p id="producer"><b>Producer:</b> ${m.producer}</p>
-      <p id="rt_score"><b>Score:</b> ${m.rt_score}</p>
+      <h1 class="pModals" id="title"><b>Title:</b> ${m.title}</h1>
+      <p class="pModals" id="description"><b>Description:</b> ${m.description}</p>
+      <p class="pModals" id="release_date"><b>Release date:</b> ${m.release_date}</p>
+      <p class="pModals" id="producer"><b>Producer:</b> ${m.producer}</p>
+      <p class="pModals" id="director"><b>Director:</b> ${m.director}</p>
+      <p class="pModals" id="rt_score"><b>Score:</b> ${m.rt_score}</p>
     </div>
 </section>`;
 }
-
 
 const allModals = document.querySelector(".modals");
 const addModal = () =>{
@@ -105,8 +115,8 @@ peoples.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "none";
   document.getElementById("thirdPage").style.display = "block";
-  hiddenFooter.classList.remove("oculto");
-  hiddenNav.classList.remove("oculto");
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
 });
 //mostrar personajes
 const showToCharacters = document.getElementById("showToCharacters");
@@ -157,7 +167,6 @@ searchName.addEventListener("keyup", () => {
   showInScreenTwo(searchCharacter);
 })
 
-
 //boton para la hoja de vehiculos
 const vehicles = document.getElementById("vehicles");
 vehicles.addEventListener("click", () => {
@@ -165,8 +174,8 @@ vehicles.addEventListener("click", () => {
   document.getElementById("secondPage").style.display = "none";
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "block";
-  hiddenFooter.classList.remove("oculto");
-  hiddenNav.classList.remove("oculto");
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
 });
 //mostrar vehiculos
 const showToVehicles = document.getElementById("showToVehicles");
@@ -201,8 +210,8 @@ locations.addEventListener("click", () => {
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "none";
   document.getElementById("fifthPage").style.display = "block";
-  hiddenFooter.classList.remove("oculto");
-  hiddenNav.classList.remove("oculto");
+  hiddenFooter.classList.remove("hiden");
+  hiddenNav.classList.remove("hiden");
 });
 //mostrar vehiculos
 const showToLocations = document.getElementById("showToLocations");
