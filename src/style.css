@@ -159,7 +159,7 @@ video {
 #fifthPage{
     display: none;
 }
-#navigationBar{
+.navigation{
     position: absolute;
     left: 80%;
     top:9%;
@@ -224,7 +224,6 @@ footer {
     color: rgb(94, 87, 87);
 }
 .filterDesign{
-    /* position: absolute; */
     top:15%;
     width: 150px;
     color: #fff;
@@ -290,15 +289,45 @@ footer {
     height: 260px;
     transition: all 0.2s;
 }
-/* #probemos{
+
+.modals{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color: rgba(0,0,0,0.85);
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
 }
-#ximena{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
+
+.containerModals{
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 300px;
+}
+.containerModals > .informationOfMovies > img{
+    height: 283px;
+    width: 220px;
+    margin-bottom: 0;
+}
+.close{
+    position: absolute;
+    top:5px;
+    right:5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 20%;
+}
