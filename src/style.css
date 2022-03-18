@@ -1,4 +1,186 @@
 *{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    }
+    
+    .menu_bar{
+        display: none;
+    }
+    
+    header {
+        /* background: #3f7f81; */
+        width:100%;
+        font-family: roboto, sans-serif;
+    }
+    
+    header nav {
+        background: #fff;
+        z-index: 1000;
+        max-width: 100%;
+        margin-top: -5px;
+        box-shadow: 1px 1px 0px rgb(148, 147, 147);
+    }
+    header nav ul {
+        list-style: none;
+    }
+    header nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    header nav ul li .caret {
+        position: relative;
+        top: 3px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    
+    header nav ul li:hover .children {
+        display: block;
+    }
+    
+    header nav ul li .children {
+        display: none;
+        background: #7c5a11;
+        position: absolute;
+        width: 150%;
+        z-index: 1000;
+    }
+    
+    header nav ul li .children li {
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+    
+    header nav ul li .children li a {
+        display: block;
+    }
+    
+    header nav ul li .children li a span {
+        float:right;
+        position: relative;
+        top: 2px;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    
+    header nav ul li a {
+        color: #0A3D63;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    header nav ul li a:hover {
+        background-color: #5BA0DE;
+    }
+    
+    header nav ul li a span{
+        margin-right: 10px;
+    }
+    .nav{
+        background-color: #606060;
+        position: relative;
+        z-index: -1;
+    }
+    
+    .fondoNav {
+        position: relative;
+        bottom: 60%;
+        width: 100%;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #logo {
+        position: absolute;
+        margin: 0;
+        bottom: 80%;
+        cursor: pointer;
+    }
+    
+    video {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        /* min-height: 50%; */
+        object-fit: contain;
+    }
+    
+    .wraper{
+        background-color: rgb(29, 29, 29);
+    }
+
+    #showSecondPage {
+        position: absolute;
+        left: 83%;
+        top:5%;
+        color: rgb(8, 8, 8);
+        box-shadow: 0 0 20px 1 px rgba(0, 0, 0, 0.3);
+        padding: 8px 39px;
+        font-size: 15px;
+        border-radius: 20px;
+        opacity: 50%;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid #fff;
+    
+    }
+    
+    #showSecondPage:hover{
+        background: linear-gradient(90deg, rgba(251,147,235,1) 0%, rgba(158,158,255,1) 35%, rgba(84,227,246,1) 100%);
+        opacity: 100%;
+        border: 1px solid rgba(158,158,255,1);
+        color: #fff;
+    }
+    
+    #secondPage {
+        display: none;
+    }
+    #thirdPage {
+        display: none;
+    }
+    #fourtPage{
+        display: none;
+    }
+    #fifthPage{
+        display: none;
+    }
+    .navigation{
+        position: absolute;
+        left: 80%;
+        top:9%;
+        padding: 6px 6px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 1px solid #5BA0DE;
+    }
+    
+    #iconSearch{
+        position: absolute;
+        left:93%;
+        top:61px;
+        color: #5BA0DE;
+    }
+    
+    #listOfFilms{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .containerMovies:hover, .containerCharacters:hover, .containerVehicles:hover {
+        -webkit-transform: scale(1.3);transform:scale(1.3);}
+
 padding: 0;
 margin: 0;
 -webkit-box-sizing: border-box;
@@ -184,6 +366,7 @@ video {
 
 
 
+
 .containerMovies{
     top:100%;
     padding: 5px;
@@ -252,6 +435,7 @@ video {
     flex-direction: column;
     align-items: justify;
     box-shadow: 5px 10px 8px #5BA0DE;
+
     background-color: #f5f1f1;
     border-radius: 27px;
     padding: 9px;
@@ -272,11 +456,35 @@ video {
 .pCharacters{
     padding: 2px;
     font-size: 13px;
+    text-align: center;
+
+    background-color: #f5f1f1;
+    border-radius: 27px;
+    padding: 9px;
+}
+
+.containerVehicles{
+    width: 27%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    box-shadow: 5px 10px 8px #5BA0DE;
+    background-color: #f5f1f1;
+    padding: 18px;
+    border-radius: 27px;
+}
+
+.pCharacters{
+    padding: 2px;
+    font-size: 13px;
+
     color: rgb(94, 87, 87);
 }
 #veremos{
     padding: 0;
 }
+
 
 .filter_1{
     display: inline-block;
@@ -295,6 +503,187 @@ video {
     height: 260px;
     transition: all 0.2s;
     border-radius: 27px;
+
+}
+.repositoryGit{
+    max-width: 6%;
+    color: #fff;
+    position: relative;
+    top: 15px;
+}
+
+.referenceName{
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer {
+    background-color: #0A3D63;
+    width: 100%;
+    height: 200%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+    
+}
+#logoFooter{
+    width: 60%;
+    padding-left: 20px;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+}
+
+.columnOne{
+    width: 50%;
+    display: contents;
+}
+
+.columnTwo{
+    width: 50%;
+}
+
+.upMenu{
+    background-color: Grey;
+    width: 50%;
+    display: contents;
+}
+.upButton{
+    width: 40%;
+    position: relative;
+    left: 160px;
+    bottom: 10px;
+}
+.modals{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.85);
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+.containerModals{
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 300px;
+}
+.containerModals > .informationOfMovies > img{
+    height: 283px;
+    width: 220px;
+    margin-bottom: 0;
+}
+.pModals{
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(94, 87, 87);
+}
+.close{
+    position: absolute;
+    top:5px;
+    right:5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+@media (max-width: 640px) {
+    *{
+        background-color:red;
+    }
+    nav{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+    }
+    .bt_menu {
+        left: 560px;
+        position: relative;
+        top: 2px;
+        text-decoration: none;
+        color: #fff;
+        display: none;
+    }
+    #showSecondPage{
+        left: 80%;
+        top: 17px;
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+    #logo {
+        top: 9px;
+        width: 150px;
+    }
+    #iconSearch{
+        position: absolute;
+        left:93%;
+        top:61px;
+        color: #5BA0DE;
+    }
+    #navigationBar {
+    left: 450px;
+    top: 19px;
+    padding: 2px;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 1px solid #5BA0DE;
+    width: 90px;
+    }
+    #coverPage {
+    height: 32%;
+        }
+    .filterDesign{
+    font-size: 12px;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    }
+    p{
+        font-size: 9px;
+    }
+    #logoFooter {
+        width: 60%;
+        padding-left: 15px;
+        }
+    
+        .upButton {
+        left: 90px;
+        bottom: 13px;
+    }
+    .filter_1 {
+        display: inline-block;
+    }
+    .poster {
+        width: 180px;
+        height: 230px;
+        }
+    #title {
+        font-size: 13px;
+        }
+    .repositoryGit {
+        top: 4px;
+    }
+    
+    }
+
 }
 
 /* footer {
@@ -353,83 +742,3 @@ p{
     bottom: 10px;
 }
 
-
-@media (max-width: 640px) {
-*{
-    background-color:red;
-}
-nav{
-    display: none;
-}
-.menu_bar{
-    display: block;
-}
-.bt_menu {
-    left: 560px;
-    position: relative;
-    top: 2px;
-    text-decoration: none;
-    color: #fff;
-    display: none;
-}
-#showSecondPage{
-    left: 80%;
-    top: 17px;
-    padding: 6px 20px;
-    font-size: 12px;
-}
-#logo {
-    top: 9px;
-    width: 150px;
-}
-#iconSearch{
-    position: absolute;
-    left:93%;
-    top:61px;
-    color: #5BA0DE;
-}
-#navigationBar {
-left: 450px;
-top: 19px;
-padding: 2px;
-font-size: 12px;
-border-radius: 10px;
-border: 1px solid #5BA0DE;
-width: 90px;
-}
-#coverPage {
-height: 32%;
-    }
-.filterDesign{
-font-size: 12px;
-width: 130px;
-display: flex;
-flex-direction: row;
-}
-p{
-    font-size: 9px;
-}
-#logoFooter {
-    width: 60%;
-    padding-left: 15px;
-    }
-
-    .upButton {
-    left: 90px;
-    bottom: 13px;
-}
-.filter_1 {
-    display: inline-block;
-}
-.poster {
-    width: 180px;
-    height: 230px;
-    }
-#title {
-    font-size: 13px;
-    }
-.repositoryGit {
-    top: 4px;
-}
-
-}

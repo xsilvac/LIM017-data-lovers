@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>FanGhibli</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="imagenes/logo fanGhibli.ico" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="assets/fonts.css">
@@ -12,7 +13,11 @@
 
 <header id="main-header">
   <div class="menu_bar">
+
+    <a href="#" class="bt_menu"><span class="icon-menu"></span>Menú</a>
+
     <a href="#" class="bt_menu"><span class="icon-menu"></span>Menú</a> 
+
   </div>
   <div id="nav">
     <img class="fondoNav" src="imagenes/fondo.jpg">
@@ -50,8 +55,12 @@
     </section>
 
     <section id="secondPage">
-      <input id="navigationBar" type="text" placeholder=" Search...">
+      <input id="navigationBar" class="navigation" type="text" placeholder=" Search title">
       <i id="iconSearch" class="fa fa-search"></i>
+
+
+
+      <div id="sectionFilterDirector" class="filter_1">
 
         <div id="sectionFilterDirector" class="filter_1">
         <select id="filterDirector" class="filterDesign">
@@ -83,17 +92,52 @@
         </select>
       </div>
       <div id="listOfFilms"></div>
+      <div id="allModals" class="modals"></div>
     </section>
 
     <section id="thirdPage">
-          <select id="filterGender">
-          <option value="empty" disabled selected>Personajes</option>
+      <input id="searchName" class="navigation" type="text" placeholder=" Search character name">
+      <!-- <i id="iconSearchs" class="fa fa-search"></i> -->
+      <div>
+        <select id="filterGender" class="filterDesign">
+          <option value="empty" disabled selected>Gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="NA">NA</option>
           <option value="Unknown (Possible Male)">Unknown</option>
         </select>
-        <div id="showToCharacters"></div>
+      </div>
+      <div>
+        <select id="filterSpecie" class="filterDesign">
+          <option value="empty" disabled selected>Specie</option>
+          <option value="Bird">Bird</option>
+          <option value="Borrower">Borrower</option>
+          <option value="Cat">Cat</option>
+          <option value="Deity">Deity</option>
+          <option value="Demon">Demon</option>
+          <option value="Deity, Dragon">Dragon</option>
+          <option value="Dog">Dog</option>
+          <option value="Fish/Human">Fish/Human</option>
+          <option value="Human">Human</option>
+          <option value="Raccoon Dog">Raccoon Dog</option>
+          <option value="Red elk">Red elk</option>
+          <option value="Spirit">Spirit</option>
+          <option value="Spirit of The White Fox">Spirit of The White Fox</option>
+          <option value="Totoro">Totoro</option>
+          <option value="unknown">Unknown</option>
+          <option value="Witch">Witch</option>
+          <option value="Wizard">Wizard</option>
+          <option value="Wolf">Wolf</option>
+        </select>
+      </div>
+      <div>
+        <select id="filterOrderByCharacter" class="filterDesign">
+          <option value="empty" disabled selected>Order by</option>
+          <option value="asc">A - Z</option>
+          <option value="des">Z - A</option>
+        </select>
+      </div>
+      <div id="showToCharacters"></div>
     </section>
 
     <section id="fourtPage">
@@ -101,6 +145,8 @@
     </section>
 
     <section id="fifthPage">
+      <input id="searchLocations" class="navigation" type="text" placeholder=" Search location name">
+      <!-- <i id="iconSearchs" class="fa fa-search"></i> -->
       <div id="showToLocations"></div>
     </section>
 
@@ -119,6 +165,13 @@
       </section>
     </footer>
 
+  </main>
+  <div id="root"></div>
+  <script src="https://kit.fontawesome.com/92405dc353.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="main.js" type="module"></script>
+
+
     
 
     </main>
@@ -127,6 +180,7 @@
     <!-- <script src="https://kit.fontawesome.com/92405dc353.js" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js" type="module"></script>
+
 </body>
 
 </html>
