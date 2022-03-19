@@ -76,3 +76,10 @@ export const filterNameLocations = (data, x, a) => {
   const resultFilterLocation = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
   return resultFilterLocation;
 }
+
+
+
+
+
+
+
