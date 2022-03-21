@@ -2,7 +2,6 @@ import {
   filterDataDirector, filterDataProducer, sortData, filterTitle, joinCharacter, joinVehicles, joinLocations,
   filterDataByGender, filterDataSpecie, dataOrderCharacter, filterName, filterNameLocations} from "./data.js";
 import data from "./data/ghibli/ghibli.js";
-
 const logoSecondPage = document.getElementById("logo");
 logoSecondPage.addEventListener("click", () => {
   document.getElementById("secondPage").style.display = "block";
@@ -13,14 +12,12 @@ logoSecondPage.addEventListener("click", () => {
   hiddenFooter.classList.remove("hiden");
   hiddenNav.classList.remove("hiden");
 });
-
 const hiddenNav1 = document.getElementById("main-header");
 hiddenNav1.classList.add("hiden");
 const hiddenFooter = document.querySelector("footer");
 hiddenFooter.classList.add("hiden");
 const hiddenNav = document.getElementById("nav");
 hiddenNav.classList.add("hiden");
-
 const btn = document.getElementById("showSecondPage");
 btn.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
@@ -29,7 +26,7 @@ btn.addEventListener("click", () => {
   hiddenNav.classList.remove("hiden");
   hiddenNav1.classList.remove("hiden");
 });
-//mostrar pagina principal
+//Mostrar página principal
 let allMovies = data.films;
 let printFilms = document.getElementById("listOfFilms");
 let moviesToShow = (x) => {
@@ -46,7 +43,6 @@ const showInScreen = (y) => {
   });
 };
 showInScreen(allMovies);
-
 let informationModal = (m) => {
   return `
   <section class = "containerModals">
@@ -62,7 +58,6 @@ let informationModal = (m) => {
     </div>
 </section>`;
 }
-
 const allModals = document.querySelector(".modals");
 const addModal = () =>{
   document.querySelectorAll(".containerMovies").forEach((element, index) => {
@@ -71,7 +66,6 @@ const addModal = () =>{
       allModals.innerHTML ="";
       allModals.innerHTML += modalHtml;
       document.querySelector(".containerModals").style.display ="block";
-
       const close = document.getElementsByClassName("close")[0];
             close.addEventListener("click", () => {
                 document.querySelector(".containerModals").style.display = 'none';
@@ -80,8 +74,6 @@ const addModal = () =>{
   )
 }
 addModal();
-
-
 //filtrar por director
 const filterDirector = document.getElementById("filterDirector");
 filterDirector.addEventListener("change", (x) => {
@@ -106,10 +98,8 @@ navigationBar.addEventListener("keyup", () => {
   const searchText = filterTitle(allMovies, "title", navigationBar.value.toLowerCase());
   showInScreen(searchText);
 });
-
-
 //boton para la hoja de personajes
-const peoples = document.getElementById("people");
+const peoples = document.getElementById("character");
 peoples.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "none";
@@ -165,9 +155,8 @@ searchName.addEventListener("keyup", () => {
   const searchCharacter = filterName(joinCharacter(allMovies), "name", searchName.value.toLowerCase());
   showInScreenTwo(searchCharacter);
 })
-
 //boton para la hoja de vehiculos
-const vehicles = document.getElementById("vehicles");
+const vehicles = document.getElementById("vehiclesNav");
 vehicles.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "none";
@@ -199,10 +188,8 @@ const showInScreenThree = (y) => {
   })
 }
 showInScreenThree(joinVehicles(allMovies));
-
-
 //boton para la hoja de locaciones
-const locations = document.getElementById("locations");
+const locations = document.getElementById("locationsNav");
 locations.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "none";
@@ -234,9 +221,6 @@ const showInScreenFour = (y) => {
   })
 }
 showInScreenFour(joinLocations(allMovies));
-
-
-
 const searchLocations = document.getElementById("searchLocations");
 searchLocations.addEventListener("keyup", () => {
   const searchNameLocations = filterNameLocations(joinLocations(allMovies), "name", searchLocations.value.toLowerCase());
