@@ -10,7 +10,6 @@ export const filterTitle = (data, x, y) => {
   const resultFilterTitle = data.filter(item => item[x].toLowerCase().includes(y.toLowerCase()));
   return resultFilterTitle;
 };
-
 export const sortData = (data, sortOrder)=>{
   let titleSort = data.sort((a,z)=>{
     return (a.title > z.title) ? -1:1;
@@ -18,7 +17,6 @@ export const sortData = (data, sortOrder)=>{
   if(sortOrder === 'titleDescending') {titleSort.reverse()}
   return titleSort, titleSort.reverse();
 };
-
 /* export const sortData = (data, sortBy, sortOrder) => {
   const resultOrder = data.sort((a, b) => {
     if (a[sortBy] > b[sortBy]) {
@@ -36,7 +34,6 @@ export const sortData = (data, sortOrder)=>{
   }
   return resultOrder, resultOrder.reverse();
 } */
-
 //Base de datos por personajes
 export const joinCharacter = (data) => {
   const dataPersonajes = data.map((x) => x.people);
@@ -61,7 +58,6 @@ export const dataOrderCharacter = (data, order) => {
   if (order === "des") { characterSort.reverse() }
   return characterSort;
 };
-
 // por nombre
 export const filterName = (data, x, a) => {
   const resultFilterName = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
@@ -82,7 +78,6 @@ export const filterNameLocations = (data, x, a) => {
   const resultFilterLocation = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
   return resultFilterLocation;
 }
-
 
 
 

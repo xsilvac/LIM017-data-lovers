@@ -1,9 +1,7 @@
-
 import {
   filterDataDirector, filterDataProducer, sortData, filterTitle, joinCharacter, joinVehicles, joinLocations,
   filterDataByGender, filterDataSpecie, dataOrderCharacter, filterName, filterNameLocations} from "./data.js";
 import data from "./data/ghibli/ghibli.js";
-
 const logoSecondPage = document.getElementById("logo");
 logoSecondPage.addEventListener("click", () => {
   document.getElementById("secondPage").style.display = "block";
@@ -14,16 +12,12 @@ logoSecondPage.addEventListener("click", () => {
   hiddenFooter.classList.remove("hiden");
   hiddenNav.classList.remove("hiden");
 });
-
 const hiddenNav1 = document.getElementById("main-header");
 hiddenNav1.classList.add("hiden");
-
 const hiddenFooter = document.querySelector("footer");
 hiddenFooter.classList.add("hiden");
-
 const hiddenNav = document.getElementById("nav");
 hiddenNav.classList.add("hiden");
-
 const btn = document.getElementById("showSecondPage");
 btn.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
@@ -32,7 +26,6 @@ btn.addEventListener("click", () => {
   hiddenNav.classList.remove("hiden");
   hiddenNav1.classList.remove("hiden");
 });
-
 //Mostrar página principal
 let allMovies = data.films;
 let printFilms = document.getElementById("listOfFilms");
@@ -227,7 +220,6 @@ const showInScreenFour = (y) => {
     showToLocations.innerHTML += locationsToShow(z)
   })
 }
-
 showInScreenFour(joinLocations(allMovies));
 const searchLocations = document.getElementById("searchLocations");
 searchLocations.addEventListener("keyup", () => {
