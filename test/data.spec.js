@@ -1,4 +1,3 @@
-import { it } from 'eslint/lib/rule-tester/rule-tester';
 import { filterDataDirector, filterDataProducer, filterDataSpecie, dataOrderCharacter} from '../src/data.js';
 
 const testDirector = [
