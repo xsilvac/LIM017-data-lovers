@@ -1,6 +1,5 @@
-import {
-  filterDataDirector, filterDataProducer, sortData, filterTitle, joinCharacter, joinVehicles, joinLocations,
-  filterDataByGender, filterDataSpecie, dataOrderCharacter, filterName, filterNameLocations} from "./data.js";
+import {filterDataDirector, filterDataProducer, sortData, filterTitle, joinCharacter, joinVehicles, joinLocations,
+        filterDataByGender, filterDataSpecie, dataOrderCharacter, filterName, filterNameLocations} from "./data.js";
 import data from "./data/ghibli/ghibli.js";
 
 
@@ -282,3 +281,4 @@ searchLocations.addEventListener("keyup", () => {
   const searchNameLocations = filterNameLocations(joinLocations(allMovies), "name", searchLocations.value.toLowerCase());
   showInScreenFour(searchNameLocations);
 });
+

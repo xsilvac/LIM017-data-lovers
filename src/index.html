@@ -8,6 +8,7 @@
   <link rel="icon" href="imagenes/logo fanGhibli.ico" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="assets/fonts.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 </head>
 <header id="main-header">
   <div class="menu_bar">
@@ -68,6 +69,9 @@
     </div>
       <div id="listOfFilms"></div>
       <div id="allModals" class="modals"></div>
+      <div id="grafic">
+        <canvas id="myChart" width="400" height="400"></canvas>
+      </div>
     </section>
     <section id="thirdPage">
       <input id="searchName" class="navigation" type="text" placeholder=" Search character name">
