@@ -12,12 +12,11 @@
 </head>
 <header id="main-header">
   <div class="menu_bar">
-    <a href="#" class="bt_menu"><span class="icon-menu"></span>Menú</a>
+    <a href="#" class="bt_menu"><span class="icon-menu"></span></a>
   </div>
   <div id="backgroundNav">
     <img class="fondoNav" src="imagenes/fondo.jpg">
     <input id="navigationBar" class="navigation" type="text" placeholder=" Search...">
-      <i id="iconSearch" class="fa fa-search"></i>
   </div>
    <nav id="responsive_menu">
     <ul>
@@ -38,6 +37,7 @@
     <section id="secondPage">
       <div class="filterFather">
       <div id="sectionFilterDirector" class="filter_1">
+        <label for="filterDirector">Choose a director:</label>
         <select id="filterDirector" class="filterDesign">
           <option value="empty" disabled selected>Directors</option>
           <option value="Gorō Miyazaki">Gorō Miyazaki</option>
@@ -49,6 +49,7 @@
         </select>
       </div>
       <div id="sectionFilterProducer" class="filter_1">
+        <label for="filterProducer">Choose a producer:</label>
         <select id="filterProducer" class="filterDesign">
           <option value="empty" disabled selected>Producers</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
@@ -60,6 +61,7 @@
       </div>
     
       <div id="sectionOrder" class="filter_1">
+        <label for="filterByOrder">Choose a order:</label>
         <select id="filterByOrder" class="filterDesign">
           <option value="empty" disabled selected>Order by</option>
           <option value="title">A - Z</option>
@@ -75,8 +77,8 @@
     </section>
     <section id="thirdPage">
       <input id="searchName" class="navigation" type="text" placeholder=" Search character name">
-      <!-- <i id="iconSearchs" class="fa fa-search"></i> -->
       <div class="filterFather">
+        <label for="filterGender">Gender:</label>
         <select id="filterGender" class="filterDesign">
           <option value="empty" disabled selected>Gender</option>
           <option value="Male">Male</option>
@@ -84,7 +86,8 @@
           <option value="NA">NA</option>
           <option value="Unknown (Possible Male)">Unknown</option>
         </select>
-     
+        
+        <label for="filterSpecie">Specie:</label>
         <select id="filterSpecie" class="filterDesign">
           <option value="empty" disabled selected>Specie</option>
           <option value="Bird">Bird</option>
@@ -106,13 +109,14 @@
           <option value="Wizard">Wizard</option>
           <option value="Wolf">Wolf</option>
         </select>
-     
+
+        <label for="filterOrderByCharacter">Order:</label>
         <select id="filterOrderByCharacter" class="filterDesign" name="Order">
           <option value="empty" disabled selected>Order by</option>
           <option value="asc">A - Z</option>
           <option value="des">Z - A</option>
         </select>
-      
+
     </div>
       <div id="showToCharacters"></div>
     </section>
@@ -121,7 +125,6 @@
     </section>
     <section id="fifthPage">
       <input id="searchLocations" class="navigation" type="text" placeholder=" Search location name">
-      <!-- <i id="iconSearchs" class="fa fa-search"></i> -->
       <div id="showToLocations"></div>
     </section>
     <footer>
@@ -139,7 +142,6 @@
     </footer>
   </main>
   <div id="root"></div>
-  <script src="https://kit.fontawesome.com/92405dc353.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <script src="main.js" type="module"></script>
 </body>

@@ -10,30 +10,30 @@ logoSecondPage.addEventListener("click", () => {
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "none";
   document.getElementById("fifthPage").style.display = "none";
-  hiddenFooter.classList.remove("hiden");
-  hiddenBackgroundNav.classList.remove("hiden");
-  navSearchTitle.classList.remove("hiden");
+  hiddenFooter.classList.remove("hidden");
+  hiddenBackgroundNav.classList.remove("hidden");
+  navSearchTitle.classList.remove("hidden");
 });
 
 //Ocultar secciones 
 const hiddenNavMovil = document.getElementById("main-header");
-hiddenNavMovil.classList.add("hiden");
+hiddenNavMovil.classList.add("hidden");
 const hiddenFooter = document.querySelector("footer");
-hiddenFooter.classList.add("hiden");
+hiddenFooter.classList.add("hidden");
 const hiddenBackgroundNav = document.getElementById("backgroundNav");
-hiddenBackgroundNav.classList.add("hiden");
+hiddenBackgroundNav.classList.add("hidden");
 const navSearchTitle = document.querySelector("#navigationBar");
-navSearchTitle.classList.add("hiden");
+navSearchTitle.classList.add("hidden");
 
 //Botón animaciones
 const btn = document.getElementById("showSecondPage");
 btn.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "block";
-  hiddenFooter.classList.remove("hiden");
-  hiddenBackgroundNav.classList.remove("hiden");
-  hiddenNavMovil.classList.remove("hiden");
-  navSearchTitle.classList.remove("hiden");
+  hiddenFooter.classList.remove("hidden");
+  hiddenBackgroundNav.classList.remove("hidden");
+  hiddenNavMovil.classList.remove("hidden");
+  navSearchTitle.classList.remove("hidden");
 });
 
 //Botón home
@@ -44,10 +44,10 @@ btnHome.addEventListener("click", () => {
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "none";
   document.getElementById("fifthPage").style.display = "none";
-  hiddenFooter.classList.remove("hiden");
-  hiddenBackgroundNav.classList.remove("hiden");
-  hiddenNavMovil.classList.remove("hiden");
-  navSearchTitle.classList.remove("hiden");
+  hiddenFooter.classList.remove("hidden");
+  hiddenBackgroundNav.classList.remove("hidden");
+  hiddenNavMovil.classList.remove("hidden");
+  navSearchTitle.classList.remove("hidden");
 });
 
 //Mostrar página principal
@@ -103,10 +103,34 @@ const addModal = () =>{
 }
 addModal();
 
+
+
+
+
 //Menú para móvil
 
-const responsiveMenu = document.querySelector("#responsive_menu");
-responsiveMenu.addEventListener("click", () => {})
+const hiddenMenuResponsive = document.querySelector("#responsive_menu");
+// hiddenMenuResponsive.classList.add("hidden");
+
+const responsiveMenu = document.querySelector(".bt_menu");
+responsiveMenu.addEventListener("click", (e) => {
+  e.preventDefault();
+  if(hiddenMenuResponsive.classList.contains("hidden")){
+    hiddenMenuResponsive.classList.remove("hidden");
+    document.querySelector("body").style.overflow = "hidden";
+  } else {
+    hiddenMenuResponsive.classList.add("hidden");
+    document.querySelector("body").style.overflow = "visible";
+  }
+  // hiddenMenuResponsive.classList.remove("hidden");
+});
+  
+
+
+
+
+
+
 
 
 //Filtrar por director
@@ -144,8 +168,8 @@ peoples.addEventListener("click", () => {
   document.getElementById("secondPage").style.display = "none";
   document.getElementById("thirdPage").style.display = "block";
   document.getElementById("fifthPage").style.display = "none";
-  hiddenFooter.classList.remove("hiden");
-  hiddenBackgroundNav.classList.remove("hiden");
+  hiddenFooter.classList.remove("hidden");
+  hiddenBackgroundNav.classList.remove("hidden");
 });
 
 //Mostrar personajes
@@ -205,14 +229,16 @@ searchName.addEventListener("keyup", () => {
 //Botón para la hoja de vehículos
 const vehicles = document.getElementById("vehiclesNav");
 vehicles.addEventListener("click", () => {
+  document.getElementById("iconSearch").style.display = "none";
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "none";
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "block";
   document.getElementById("fifthPage").style.display = "none";
-  hiddenFooter.classList.remove("hiden");
-  hiddenBackgroundNav.classList.remove("hiden");
-  navSearchTitle.classList.add("hiden");
+  hiddenFooter.classList.remove("hidden");
+  hiddenBackgroundNav.classList.remove("hidden");
+  navSearchTitle.classList.add("hidden");
+
 });
 
 //Mostrar vehículos
@@ -247,8 +273,8 @@ locations.addEventListener("click", () => {
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "none";
   document.getElementById("fifthPage").style.display = "block";
-  hiddenFooter.classList.remove("hiden");
-  hiddenBackgroundNav.classList.remove("hiden");
+  hiddenFooter.classList.remove("hidden");
+  hiddenBackgroundNav.classList.remove("hidden");
 });
 
 //Mostrar locaciones

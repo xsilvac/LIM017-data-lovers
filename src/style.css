@@ -199,7 +199,8 @@ video {
 .filterFather{
     display: flex;
     direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin-right: 60px;
 }
 
 
@@ -266,10 +267,17 @@ video {
     font-size: 15px;
     border-radius: 20px;
     cursor: pointer;
-    border: 1px solid #3DC6C6;
-    background: #3DC6C6;
+    border: 1px solid #0A3D63;
+    background: #0A3D63;
 }
-.hiden{
+
+label{
+    color: #0A3D63;
+    font-size:15px;
+    margin: 35px 15px auto;
+}
+
+.hidden{
     display: none;
 }
 #showToCharacters{
@@ -501,39 +509,41 @@ p{
     bottom: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 550px) and (max-width: 767px) {
     *{
-        background-color:red;
         font-size:12px;
     }
     header nav{
         font-size: 13px;
     }
 
+    .fondoNav{
+        margin-bottom: 20px;
+    }
+
     .menu_bar{
         display: block;
         position: fixed;
-        width: 100%;
-        top: 0px;
-        background: blue;
+        width: 10%;
+        right: 0;
         z-index: 1000;
     }
 
-
-
     .menu_bar .bt_menu{
         display: block;
-        padding: 20px;
+        padding: 25px;
         color: #fff;
         overflow: hidden;
-        font-size: 25px;
-        font-weight: bold;
         text-decoration: none;
+        width: 12%;
+        float: inline-end;
     }
 
     .menu_bar span{
         float: right;
         font-size: 30px;
+        position: relative;
+        bottom: 10px;
     }
 
     header nav{
@@ -551,24 +561,26 @@ p{
 
     header nav ul li{
         display: block;
-        border-bottom: 1.3px solid rgba(255,255,255,0.5);
+        border-bottom: 1.3px solid rgba(10,61,99,0.5);
         line-height: 30px;
     }
-    
+
     header nav ul li a{
         display: block;
     }
 
-    hea
+    label {
+        font-size: 12px;
+        margin: 5px;
+    }
 
-    /* .bt_menu {
-        left: 100px;
-        position: relative;
-        top: 2px;
-        text-decoration: none;
-        color: #fff;
-        display: none;
-    } */
+    .containerModals{
+        left: 80px;
+        width: 460px;
+        height: 260px;
+        padding: 10px 0px 0px 1px;
+    }
+
     #showSecondPage{
         left: 80%;
         top: 17px;
@@ -595,14 +607,18 @@ p{
         width: 90px;
     }
     #coverPage {
-        height: 32%;
+        height: 100%;
+        width: auto;
         }
     .filterDesign{
         font-size: 12px;
-        width: 130px;
+        width: 80px;
+        height: 25px;
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
+        margin-top: 0px;
+        padding: 2px 2px 2px 10px;
+        margin-right: 15px;
     }
     p{
         font-size: 9px;
@@ -625,6 +641,27 @@ p{
     #title {
         font-size: 13px;
         }
+
+    #titleModal{
+        left:0;
+    }
+
+    .modalDescription{
+        width: 250px;
+        height: 173px;
+        left: -290px;
+    }
+
+    .navigation{
+        left: 400px;
+        top: 19px;
+        padding: 2px;
+        font-size: 12px;
+        border-radius: 10px;
+        border: 1px solid #5BA0DE;
+        width: 90px;
+    }
+
     .repositoryGit {
         top: 4px;
     }
