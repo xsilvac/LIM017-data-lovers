@@ -10,11 +10,11 @@ export const filterTitle = (data, x, y) => {
   const resultFilterTitle = data.filter(item => item[x].toLowerCase().includes(y.toLowerCase()));
   return resultFilterTitle;
 };
-export const sortData = (data, sortOrder)=>{
-  let titleSort = data.sort((a,z)=>{
-    return (a.title > z.title) ? -1:1;
+export const sortData = (data, sortOrder) => {
+  let titleSort = data.sort((a, z) => {
+    return (a.title > z.title) ? -1 : 1;
   })
-  if(sortOrder === 'titleDescending') {titleSort.reverse()}
+  if (sortOrder === 'titleDescending') { titleSort.reverse() }
   return titleSort, titleSort.reverse();
 };
 /* export const sortData = (data, sortBy, sortOrder) => {
@@ -78,11 +78,3 @@ export const filterNameLocations = (data, x, a) => {
   const resultFilterLocation = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
   return resultFilterLocation;
 }
-
-
-
-
-
-
-
-
