@@ -13,27 +13,17 @@
   <div class="menu_bar">
     <a href="#" class="bt_menu"><span class="icon-menu"></span>Menú</a>
   </div>
-  <div id="nav">
+  <div id="backgroundNav">
     <img class="fondoNav" src="imagenes/fondo.jpg">
+    <input id="navigationBar" class="navigation" type="text" placeholder=" Search...">
+      <i id="iconSearch" class="fa fa-search"></i>
   </div>
-   <nav>
+   <nav id="responsive_menu">
     <ul>
-      <li class="submenu">
-        <a href="#"><span class="icon-cog"></span>Directors <span class="caret icon-arrow-down2"></span></a>
-        <ul class="children" id="children">
-          <li><a href="#" id="Gorō Miyazaki" class="btn"><span class="icon-yelp"></span>Gorō Miyazaki</a></li>
-          <li><a href="#" id="Hayao Miyazaki" class="btn"><span class="icon-yelp"></span>Hayao Miyazaki</a></li>
-          <li><a href="#" id="Hiromasa Yonebayashi" class="btn"><span class="icon-yelp"></span>Hiromasa Yonebayashi</a></li>
-          <li><a href="#" id="Hiroyuki Morita" class="btn"><span class="icon-yelp"></span>Hiroyuki Morita</a></li>
-          <li><a href="#" id="Isao Takahata" class="btn"><span class="icon-yelp"></span>Isao Takahata</a></li>
-          <li><a href="#" id="Yoshifumi Kondō" class="btn"><span class="icon-yelp"></span>Yoshifumi Kondō</a></li>
-        </ul>
-      </li>
-      <li><a href="#"><span class="icon-key2"></span>Producers</a></li>
-      <li><a href="#" id="character"><span class="icon-hammer"></span>Characters</a></li>
-      <li><a href="#" id="vehiclesNav"><span class="icon-hammer"></span>Vehicles</a></li>
-      <li><a href="#" id="locationsNav"><span class="icon-hammer"></span>Locations</a></li>
-      <li><a href="#"><span class="icon-magic-wand"></span>Order by</a></li>
+      <li id="home"><a href="#"><span class="icon-home"></span>Home</a> </li>
+      <li><a href="#" id="character"><span class="icon-hipster"></span>Characters</a></li>
+      <li><a href="#" id="vehiclesNav"><span class="icon-truck"></span>Vehicles</a></li>
+      <li><a href="#" id="locationsNav"><span class="icon-location"></span>Locations</a></li>
     </ul>
   </nav>
 </header>
@@ -45,8 +35,7 @@
       <button id="showSecondPage" type="button">Animaciones</button>
     </section>
     <section id="secondPage">
-      <input id="navigationBar" class="navigation" type="text" placeholder=" Search title">
-      <i id="iconSearch" class="fa fa-search"></i>
+      <div class="filterFather">
       <div id="sectionFilterDirector" class="filter_1">
         <select id="filterDirector" class="filterDesign">
           <option value="empty" disabled selected>Directors</option>
@@ -68,6 +57,7 @@
           <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
         </select>
       </div>
+    
       <div id="sectionOrder" class="filter_1">
         <select id="filterByOrder" class="filterDesign">
           <option value="empty" disabled selected>Order by</option>
@@ -75,13 +65,14 @@
           <option value="titleDescending">Z - A</option>
         </select>
       </div>
+    </div>
       <div id="listOfFilms"></div>
       <div id="allModals" class="modals"></div>
     </section>
     <section id="thirdPage">
       <input id="searchName" class="navigation" type="text" placeholder=" Search character name">
       <!-- <i id="iconSearchs" class="fa fa-search"></i> -->
-      <div>
+      <div class="filterFather">
         <select id="filterGender" class="filterDesign">
           <option value="empty" disabled selected>Gender</option>
           <option value="Male">Male</option>
@@ -89,8 +80,7 @@
           <option value="NA">NA</option>
           <option value="Unknown (Possible Male)">Unknown</option>
         </select>
-      </div>
-      <div>
+     
         <select id="filterSpecie" class="filterDesign">
           <option value="empty" disabled selected>Specie</option>
           <option value="Bird">Bird</option>
@@ -112,14 +102,14 @@
           <option value="Wizard">Wizard</option>
           <option value="Wolf">Wolf</option>
         </select>
-      </div>
-      <div>
-        <select id="filterOrderByCharacter" class="filterDesign">
+     
+        <select id="filterOrderByCharacter" class="filterDesign" name="Order">
           <option value="empty" disabled selected>Order by</option>
           <option value="asc">A - Z</option>
           <option value="des">Z - A</option>
         </select>
-      </div>
+      
+    </div>
       <div id="showToCharacters"></div>
     </section>
     <section id="fourtPage">

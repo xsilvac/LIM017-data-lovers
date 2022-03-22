@@ -1,3 +1,4 @@
+//Filtro para director
 export const filterDataDirector = (data, filterDirector) => {
   const resultByDirector = data.filter(y => y.director === filterDirector);
   return resultByDirector;
@@ -17,23 +18,7 @@ export const sortData = (data, sortOrder)=>{
   if(sortOrder === 'titleDescending') {titleSort.reverse()}
   return titleSort, titleSort.reverse();
 };
-/* export const sortData = (data, sortBy, sortOrder) => {
-  const resultOrder = data.sort((a, b) => {
-    if (a[sortBy] > b[sortBy]) {
-      return -1;
-    }
-    else if (a[sortBy] < b[sortBy]) {
-      return 1;
-    }
-    else {
-      return 0;
-    }
-  });
-  if (sortOrder === "titleDescending") {
-    return resultOrder.reverse();
-  }
-  return resultOrder, resultOrder.reverse();
-} */
+
 //Base de datos por personajes
 export const joinCharacter = (data) => {
   const dataPersonajes = data.map((x) => x.people);
