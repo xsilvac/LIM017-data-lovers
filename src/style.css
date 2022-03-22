@@ -182,13 +182,6 @@ video {
     border: 1px solid #5BA0DE;
 }
 
-#iconSearch{
-    position: absolute;
-    left:93%;
-    top:61px;
-    color: #5BA0DE;
-}
-
 #listOfFilms{
     display: flex;
     flex-direction: row;
@@ -509,7 +502,7 @@ p{
     bottom: 10px;
 }
 
-@media (min-width: 550px) and (max-width: 767px) {
+@media (min-width: 550px) and (max-width: 867px) {
     *{
         font-size:12px;
     }
@@ -566,7 +559,12 @@ p{
     }
 
     header nav ul li a{
-        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li a span{
+        margin: 8px 2px 0px 0px;
     }
 
     label {
@@ -591,12 +589,7 @@ p{
         top: 9px;
         width: 150px;
     }
-    #iconSearch{
-        position: absolute;
-        color: #5BA0DE;
-        margin-top: -40px;
-        margin-left: -90px;
-    }
+    
     #navigationBar {
         left: 400px;
         top: 19px;

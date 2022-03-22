@@ -5,14 +5,15 @@ import data from "./data/ghibli/ghibli.js";
 
 const logoSecondPage = document.getElementById("logo");
 logoSecondPage.addEventListener("click", () => {
-  document.getElementById("secondPage").style.display = "block";
-  document.getElementById("firstPage").style.display = "none";
+  document.getElementById("secondPage").style.display = "none";
+  document.getElementById("firstPage").style.display = "block";
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "none";
   document.getElementById("fifthPage").style.display = "none";
-  hiddenFooter.classList.remove("hidden");
-  hiddenBackgroundNav.classList.remove("hidden");
-  navSearchTitle.classList.remove("hidden");
+  hiddenFooter.classList.add("hidden");
+  hiddenBackgroundNav.classList.add("hidden");
+  navSearchTitle.classList.add("hidden");
+  hiddenMenuResponsive.classList.add("hidden");
 });
 
 //Ocultar secciones 
@@ -24,16 +25,21 @@ const hiddenBackgroundNav = document.getElementById("backgroundNav");
 hiddenBackgroundNav.classList.add("hidden");
 const navSearchTitle = document.querySelector("#navigationBar");
 navSearchTitle.classList.add("hidden");
+const stopAudio = document.getElementById("coverPage");
+
 
 //Botón animaciones
-const btn = document.getElementById("showSecondPage");
-btn.addEventListener("click", () => {
+const btnAnimations = document.getElementById("showSecondPage");
+btnAnimations.addEventListener("click", () => {
+  stopAudio.autoplay = false;
+  stopAudio.load();
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "block";
   hiddenFooter.classList.remove("hidden");
   hiddenBackgroundNav.classList.remove("hidden");
   hiddenNavMovil.classList.remove("hidden");
   navSearchTitle.classList.remove("hidden");
+  hiddenMenuResponsive.classList.remove("hidden");
 });
 
 //Botón home
@@ -104,13 +110,8 @@ const addModal = () =>{
 addModal();
 
 
-
-
-
 //Menú para móvil
-
 const hiddenMenuResponsive = document.querySelector("#responsive_menu");
-// hiddenMenuResponsive.classList.add("hidden");
 
 const responsiveMenu = document.querySelector(".bt_menu");
 responsiveMenu.addEventListener("click", (e) => {
@@ -122,16 +123,7 @@ responsiveMenu.addEventListener("click", (e) => {
     hiddenMenuResponsive.classList.add("hidden");
     document.querySelector("body").style.overflow = "visible";
   }
-  // hiddenMenuResponsive.classList.remove("hidden");
 });
-  
-
-
-
-
-
-
-
 
 //Filtrar por director
 const filterDirector = document.getElementById("filterDirector");
@@ -229,7 +221,6 @@ searchName.addEventListener("keyup", () => {
 //Botón para la hoja de vehículos
 const vehicles = document.getElementById("vehiclesNav");
 vehicles.addEventListener("click", () => {
-  document.getElementById("iconSearch").style.display = "none";
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "none";
   document.getElementById("thirdPage").style.display = "none";
@@ -238,7 +229,6 @@ vehicles.addEventListener("click", () => {
   hiddenFooter.classList.remove("hidden");
   hiddenBackgroundNav.classList.remove("hidden");
   navSearchTitle.classList.add("hidden");
-
 });
 
 //Mostrar vehículos
@@ -257,6 +247,7 @@ let vehiclesToShow = (vehicles) => {
   </div>
 </section>`
 };
+
 const showInScreenThree = (y) => {
   showToVehicles.innerHTML = "";
   y.forEach((z) => {
