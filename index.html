@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FanGhibli</title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="imagenes/logo fanGhibli.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/fonts.css">
+</head>
+
+<header id="main-header">
+  <div class="menu_bar">
+    <a href="#" class="btn_menu"><span class="icon-menu"></span></a>
+  </div>
+  <div id="backgroundNav">
+    <img class="fondoNav" src="imagenes/fondo.jpg">
+    <input id="navigationBar" class="navigation" type="text" placeholder=" Search...">
+  </div>
+   <nav id="responsive_menu">
+    <ul>
+      <li><a id="home"><span class="icon-home"></span>Home</a> </li>
+      <li><a id="character"><span class="icon-hipster"></span>Characters</a></li>
+      <li><a id="vehiclesNav"><span class="icon-truck"></span>Vehicles</a></li>
+      <li><a id="locationsNav"><span class="icon-location"></span>Locations</a></li>
+      <li><a id="stadisticsNav"><span class="icon-move-up"></span>Statistics</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+  <main>
+    <img src="imagenes/logo.png" title="FAN GHIBLI" id="logo">
+    <section id="firstPage">
+      <video id="coverPage" src="video/Video portada.mp4" controls autoplay loop></video>
+      <button id="showSecondPage" type="button">Animations</button>
+    </section>
+    <section id="secondPage">
+      <div class="filterFather">
+      <div id="sectionFilterDirector" class="filter_1">
+        <label for="filterDirector">Choose a director:</label>
+        <select id="filterDirector" class="filterDesign">
+          <option value="empty" disabled selected>Directors</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+        </select>
+      </div>
+      <div id="sectionFilterProducer" class="filter_1">
+        <label for="filterProducer">Choose a producer:</label>
+        <select id="filterProducer" class="filterDesign">
+          <option value="empty" disabled selected>Producers</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Toru Hara">Toru Hara</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select>
+      </div>
+    
+      <div id="sectionOrder" class="filter_1">
+        <label for="filterByOrder">Choose a order:</label>
+        <select id="filterByOrder" class="filterDesign">
+          <option value="empty" disabled selected>Order by</option>
+          <option value="title">A - Z</option>
+          <option value="titleDescending">Z - A</option>
+        </select>
+      </div>
+    </div>
+      <div id="listOfFilms"></div>
+      <div id="allModals" class="modals"></div>
+    </section>
+    <section id="thirdPage">
+      <input id="searchName" class="navigation" type="text" placeholder=" Search character name">
+      <div class="filterFather">
+        <label for="filterGender">Gender:</label>
+        <select id="filterGender" class="filterDesign">
+          <option value="empty" disabled selected>Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="NA">NA</option>
+          <option value="Unknown (Possible Male)">Unknown</option>
+        </select>
+
+        <label for="filterSpecie">Specie:</label>
+        <select id="filterSpecie" class="filterDesign">
+          <option value="empty" disabled selected>Specie</option>
+          <option value="Bird">Bird</option>
+          <option value="Borrower">Borrower</option>
+          <option value="Cat">Cat</option>
+          <option value="Deity">Deity</option>
+          <option value="Demon">Demon</option>
+          <option value="Deity, Dragon">Dragon</option>
+          <option value="Dog">Dog</option>
+          <option value="Fish/Human">Fish/Human</option>
+          <option value="Human">Human</option>
+          <option value="Raccoon Dog">Raccoon Dog</option>
+          <option value="Red elk">Red elk</option>
+          <option value="Spirit">Spirit</option>
+          <option value="Spirit of The White Fox">Spirit of The White Fox</option>
+          <option value="Totoro">Totoro</option>
+          <option value="unknown">Unknown</option>
+          <option value="Witch">Witch</option>
+          <option value="Wizard">Wizard</option>
+          <option value="Wolf">Wolf</option>
+        </select>
+
+        <label for="filterOrderByCharacter">Order:</label>
+        <select id="filterOrderByCharacter" class="filterDesign" name="Order">
+          <option value="empty" disabled selected>Order by</option>
+          <option value="asc">A - Z</option>
+          <option value="des">Z - A</option>
+        </select>
+
+    </div>
+      <div id="showToCharacters"></div>
+    </section>
+    <section id="fourtPage">
+      <div id="showToVehicles"></div>
+    </section>
+    <section id="fifthPage">
+      <input id="searchLocations" class="navigation" type="text" placeholder=" Search location name">
+      <div id="showToLocations"></div>
+    </section>
+    <section id="sixthPage">
+      <div id="grafic">
+        <h1 class="titleGrafic">Grafic Directors</h1>
+        <div class="legendGrafic">In this graph you will be able to <b>verify which director has made more animations</b> in Studio Ghibli</div>
+        <canvas id="mySecondChart" with="400px" height="400px" style="border: 2px solid #0A3D63"></canvas>
+      </div>
+    </section>
+    <footer>
+      <section id="footer">
+      <div class="columnOne">
+        <a href="#">
+        <img src="imagenes/logo footer.png" title="FAN GHIBLI" id="logoFooter">
+      </a>
+      </div>
+      <div class="columnTwo">
+      <p>© Copyright 2022 Made is with <img src="imagenes/love.png"  class="repositoryGit"> by <a href="http://github.com/elianamendez1" target="_blank" class="referenceName"><img src="imagenes/gitHubEli.png" class="repositoryGit">&nbsp;Eliana</a> and <a href="https://github.com/xsilvac" target="_blank" class="referenceName"> <img src="imagenes/gitHubXime.png" class="repositoryGit">&nbsp;Ximena</a></p>
+      </div>
+      <div class="upMenu"><a href="#"><img src="imagenes/BotonUP.png"  class="upButton"></a></div>
+      </section>
+    </footer>
+  </main>
+  <div id="root"></div>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</body>
+</html>
+
