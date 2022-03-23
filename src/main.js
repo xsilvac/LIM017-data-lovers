@@ -17,6 +17,7 @@ logoSecondPage.addEventListener("click", () => {
   hiddenBackgroundNav.classList.add("hidden");
   navSearchTitle.classList.add("hidden");
   hiddenMenuResponsive.classList.add("hidden");
+  stadistics.classList.add("hidden");
 });
 
 //Ocultar secciones 
@@ -29,7 +30,18 @@ hiddenBackgroundNav.classList.add("hidden");
 const navSearchTitle = document.querySelector("#navigationBar");
 navSearchTitle.classList.add("hidden");
 const stopAudio = document.getElementById("coverPage");
+const stadistics = document.getElementById("sixthPage");
+stadistics.classList.add("hidden");
 
+const stadisticsMenu = document.getElementById("stadisticsNav");
+stadisticsMenu.addEventListener("click", () => {
+  document.getElementById("firstPage").style.display = "none";
+  document.getElementById("secondPage").style.display = "none";
+  document.getElementById("thirdPage").style.display = "none";
+  document.getElementById("fourtPage").style.display = "none";
+  document.getElementById("fifthPage").style.display = "none";
+  stadistics.classList.remove("hidden");
+  });
 
 //Botón animaciones
 const btnAnimations = document.getElementById("showSecondPage");
@@ -74,7 +86,7 @@ const showInScreen = (y) => {
     printFilms.innerHTML += moviesToShow(z);
   });
 };
- showInScreen(allMovies);
+showInScreen(allMovies);
 
  //Modales
 let informationModal = (m) => {
@@ -301,6 +313,8 @@ searchLocations.addEventListener("keyup", () => {
   showInScreenFour(searchNameLocations);
 })
 
+
+//Estadísticas
 const dataOrderScore = computeStats("rtScore",data.films);
 const dataTitle = dataOrderScore.map(e=>e.title);
 const dataFilmsRt = (dataOrderScore.map(e=>e.rt_score)).map(Number);
@@ -339,14 +353,13 @@ for (let element of director){
             data: {
                 labels: director,
                 datasets: [{
-                  label:'Participantes por género: Mujeres: %',
                   data: porcentaje,
                   backgroundColor: [
                   'rgb(255, 171, 193, 0.9)',
                   'rgb(156, 170, 242, 0.9)',
                   'rgb(255, 202, 203, 0.9)',
-                  'rgb(149, 203, 255, 0.9)', 
-                  'rgb(255, 244, 209, 0.9)', 
+                  'rgb(149, 203, 255, 0.9)',
+                  'rgb(255, 244, 209, 0.9)',
                   'rgb(180, 229, 255, 0.9)'
                     ],
                 },
