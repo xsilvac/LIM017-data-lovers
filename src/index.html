@@ -8,8 +8,8 @@
   <link rel="icon" href="imagenes/logo fanGhibli.ico" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="assets/fonts.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 </head>
+
 <header id="main-header">
   <div class="menu_bar">
     <a href="#" class="btn_menu"><span class="icon-menu"></span></a>
@@ -31,7 +31,7 @@
 <body>
   <main>
     <img src="imagenes/logo.png" title="FAN GHIBLI" id="logo">
-    <section class="wraper" id="firstPage">
+    <section id="firstPage">
       <video id="coverPage" src="video/Video portada.mp4" controls autoplay loop></video>
       <button id="showSecondPage" type="button">Animations</button>
     </section>
@@ -84,7 +84,7 @@
           <option value="NA">NA</option>
           <option value="Unknown (Possible Male)">Unknown</option>
         </select>
-        
+
         <label for="filterSpecie">Specie:</label>
         <select id="filterSpecie" class="filterDesign">
           <option value="empty" disabled selected>Specie</option>
@@ -127,9 +127,6 @@
     </section>
     <section id="sixthPage">
       <div id="grafic">
-        <h1 class="titleGrafic">Grafic Score</h1>
-        <div class="legendGrafic">In this graph you will be able to <b>verify the score that your favorite animation</b> has received in ascending order</div>
-        <canvas id="myChart" with="1000px" height="80px" style="border: 2px solid #0A3D63"></canvas>
         <h1 class="titleGrafic">Grafic Directors</h1>
         <div class="legendGrafic">In this graph you will be able to <b>verify which director has made more animations</b> in Studio Ghibli</div>
         <canvas id="mySecondChart" with="400px" height="400px" style="border: 2px solid #0A3D63"></canvas>
@@ -152,6 +149,7 @@
   <div id="root"></div>
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <script src="main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import {
   filterDataDirector, filterDataProducer, sortData, joinCharacter, joinVehicles, joinLocations,
-  filterDataByGender, filterDataSpecie, dataOrderCharacter, computeStats, computeStatsTwo} from "./data.js";
+  filterDataByGender, filterDataSpecie, dataOrderCharacter, computeStats} from "./data.js";
 
 import data from "./data/ghibli/ghibli.js";
 
@@ -179,6 +179,7 @@ peoples.addEventListener("click", () => {
   document.getElementById("firstPage").style.display = "none";
   document.getElementById("secondPage").style.display = "none";
   document.getElementById("thirdPage").style.display = "block";
+  document.getElementById("fourtPage").style.display = "none";
   document.getElementById("fifthPage").style.display = "none";
   hiddenFooter.classList.remove("hidden");
   hiddenBackgroundNav.classList.remove("hidden");
@@ -334,27 +335,6 @@ searchLocations.addEventListener("keyup", () => {
 
 
 //Estadísticas
-const dataOrderScore = computeStats("rtScore",data.films);
-const dataTitle = dataOrderScore.map(e=>e.title);
-const dataFilmsRt = (dataOrderScore.map(e=>e.rt_score)).map(Number);
-const myChart= document.getElementById("myChart").getContext("2d");
-function totalCaseschart(graphic){
-new Chart (graphic, {
-        type:'bar',
-        data: {
-            labels: dataTitle,
-            datasets: [{
-              label:'Score of each movie',
-              data: dataFilmsRt,
-            backgroundColor: [
-              'rgb(244, 190, 238, 0.7)',
-
-                ],
-            },
-          ]}
-    })}
-totalCaseschart(myChart);
-
 let director = allMovies.map((x) => x.director);
 director = director.filter((item, i) =>{
   return director.indexOf(item) === i;
@@ -363,7 +343,7 @@ director = director.filter((item, i) =>{
 const mySecondChart= document.getElementById("mySecondChart").getContext("2d");
 let porcentaje =[];
 for (let element of director){
-  porcentaje.push((computeStatsTwo(allMovies, element)));
+  porcentaje.push((computeStats(allMovies, element)));
  }
  
  function getPercent(a){

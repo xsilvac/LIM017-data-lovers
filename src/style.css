@@ -146,10 +146,6 @@ video {
     object-fit: contain;
 }
 
-.wraper{
-    background-color: rgb(29, 29, 29);
-}
-
 #showSecondPage {
     position: absolute;
     left: 83%;

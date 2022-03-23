@@ -53,14 +53,7 @@ export const joinLocations = (data) => {
   return totalLocations;
 };
 
-export const computeStats = (x, data) => {
-  if (x == "rtScore") {
-    const dataFilmsOrder = data.sort((a, b) => b.rt_score - a.rt_score);
-    return dataFilmsOrder;
-  }
-};
-
-export const  computeStatsTwo = (data, nameDirector) =>{
+export const  computeStats = (data, nameDirector) =>{
   const moviesByDirector = (data.filter(y => y.director === nameDirector));
   const count = moviesByDirector.length;
   const percent = Math.round((count / data.length)*100);

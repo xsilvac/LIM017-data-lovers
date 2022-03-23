@@ -54,7 +54,7 @@ export default {
         {
           "id": "e08880d0-6938-44f3-b179-81947e7873fc",
           "name": "Uncle Pom",
-          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Uncle%20Pom.jpg",
+          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Uncle%20Pom.jpg",
           "gender": "Male",
           "age": "Unspecified/Elderly",
           "eye_color": "Black",

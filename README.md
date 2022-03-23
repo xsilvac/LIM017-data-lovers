@@ -17,23 +17,34 @@ Para: saber cuántas animaciones tiene Estudio Ghibli.
 
 Criterios de aceptación: Realizar HTML para visualizar la página, Dar diseño a la página con CSS, Manipular DOM para llamar a la data y visualizar la lista de animaciones en la página.
 
-La definición de terminado para ésta historia (definition of done)
+La definición de terminado para ésta historia (definition of done) es la visualización en de todas las animaciones.
 
 * **Segunda historia de usuario**
 Yo como: Fanática de Estudio Ghibli.
 Quiero: Poder encontrar una lista de categorías
 Para: conocer más información sobre mi película favorita.
+
 Criterios de aceptación: En HTML utilizar la etiqueta Select para tener una desplegable para los filtros, Dar estilo con CSS a las etiquetas, Manipular DOM para filtrar los criterios que queremos de la base de datos e imprimirlos en la pantalla, Por último, realizar los test de cada funcion.
+
+La definición de terminado para esta historia (definition of done) es poder encontrar animaciones según su director, productor, entre otros, a través de botones.
+
 * **Tercera historia de usuario**
 Yo como: Fanática de Estudio Ghibli.
 Quiero: Poder encontrar información sobre las animaciones.
 Para: Conocer detalles de mis animaciones favoritas.
+
 Criterios de aceptación: Seleccionar la descripción de cada pelicula para hacer modales, Manipularlo con DOM para imprimir en la página y dar diseño con CSS y realizar los test de cada funcion.
+
+La definición de terminado para esta historia (definition of done) es poder encontrar una información más detallada de las animaciones a través de una ventana emergente.
+
 * **Cuarta historia de usuario**
 Yo como: Fanática de Estudio Ghibli.
 Quiero: Comparar porcentaje por animaciones de mi director favorito y verificar el puntaje de cada animación por orden ascendente.
 Para: Recomendar las mejores animaciones a mis amigos.
+
 Criterios de aceptación: Encontrar la información que deseamos mostrar, manipularlo a través del DOM, mostrar la información en una gráfica estadística y dar diseño con CSS.
+
+La definición de terminado para esta historia (definition of done) es poder comparar el porcentaje de las animaciones de Studio Ghibli que ha dirigido cada uno de los directores.
 
 ## Prototipo de baja fidelidad:
 
@@ -54,6 +65,10 @@ Criterios de aceptación: Encontrar la información que deseamos mostrar, manipu
 ![Siguientes 3 pantallas](https://github.com/elianamendez1/LIM017-data-lovers/blob/03c0aa7fa40dfdf5074c67577532ba0357f2ae75/src/imagenes/Prototipo%20de%20alta%20fidelidad/FAN%20GHIBLI-08.jpg)
 
 ## Plan de acción:
+
+Eliana: Durante éstas cuatro semanas me he enfocado en mejorar la planificación, el trabajo en equipo y los horarios para poder cumplir con mis objetivos de aprendizaje.
+
+Ximena: Mi plan de acción estuvo centrado en mejorar mi trabajo en equipo, aprender más sobre Javascript y prácticas constantes con códigos nuevos.
 
 ## Test de usabilidad
 * Cambiar el video por uno que tenga las mayores animaciones posible.
