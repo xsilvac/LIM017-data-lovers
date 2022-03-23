@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 import {
-  filterDataDirector, filterDataProducer, sortData, filterTitle, joinCharacter, joinVehicles, joinLocations,
-  filterDataByGender, filterDataSpecie, dataOrderCharacter, filterName, filterNameLocations, computeStats, computeStatsTwo} from "./data.js";
-  
+  filterDataDirector, filterDataProducer, sortData, joinCharacter, joinVehicles, joinLocations,
+  filterDataByGender, filterDataSpecie, dataOrderCharacter, computeStats, computeStatsTwo} from "./data.js";
+
 import data from "./data/ghibli/ghibli.js";
 
 
@@ -20,7 +20,7 @@ logoSecondPage.addEventListener("click", () => {
   stadistics.classList.add("hidden");
 });
 
-//Ocultar secciones 
+//Ocultar secciones
 const hiddenNavMovil = document.getElementById("main-header");
 hiddenNavMovil.classList.add("hidden");
 const hiddenFooter = document.querySelector("footer");
@@ -68,6 +68,7 @@ btnHome.addEventListener("click", () => {
   hiddenBackgroundNav.classList.remove("hidden");
   hiddenNavMovil.classList.remove("hidden");
   navSearchTitle.classList.remove("hidden");
+  stadistics.classList.add("hidden");
   });
 
 //Mostrar página principal
@@ -127,7 +128,7 @@ addModal();
 //Menú para móvil
 const hiddenMenuResponsive = document.querySelector("#responsive_menu");
 
-const responsiveMenu = document.querySelector(".bt_menu");
+const responsiveMenu = document.querySelector(".btn_menu");
 responsiveMenu.addEventListener("click", (e) => {
   e.preventDefault();
   if(hiddenMenuResponsive.classList.contains("hidden")){
@@ -161,6 +162,11 @@ filterByOrder.addEventListener("change", (x) => {
 });
 
 //Buscar título de la película
+const filterTitle = (data, x, y) => {
+  const resultFilterTitle = data.filter(item => item[x].toLowerCase().includes(y.toLowerCase()));
+  return resultFilterTitle;
+};
+
 const navigationBar = document.querySelector("#navigationBar");
 navigationBar.addEventListener("keyup", () => {
   const searchText = filterTitle(allMovies, "title", navigationBar.value.toLowerCase());
@@ -176,6 +182,7 @@ peoples.addEventListener("click", () => {
   document.getElementById("fifthPage").style.display = "none";
   hiddenFooter.classList.remove("hidden");
   hiddenBackgroundNav.classList.remove("hidden");
+  stadistics.classList.add("hidden");
 });
 
 //Mostrar personajes
@@ -226,6 +233,11 @@ filterOrderByCharacter.addEventListener("change", (x) => {
 });
 
 //Buscar nombre de personaje
+const filterName = (data, x, a) => {
+  const resultFilterName = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
+  return resultFilterName;
+};
+
 const searchName = document.querySelector("#searchName");
 searchName.addEventListener("keyup", () => {
   const searchCharacter = filterName(joinCharacter(allMovies), "name", searchName.value.toLowerCase());
@@ -243,6 +255,7 @@ vehicles.addEventListener("click", () => {
   hiddenFooter.classList.remove("hidden");
   hiddenBackgroundNav.classList.remove("hidden");
   navSearchTitle.classList.add("hidden");
+  stadistics.classList.add("hidden");
 });
 
 //Mostrar vehículos
@@ -280,9 +293,15 @@ locations.addEventListener("click", () => {
   document.getElementById("fifthPage").style.display = "block";
   hiddenFooter.classList.remove("hidden");
   hiddenBackgroundNav.classList.remove("hidden");
+  stadistics.classList.add("hidden");
 });
 
 //Mostrar locaciones
+export const filterNameLocations = (data, x, a) => {
+  const resultFilterLocation = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
+  return resultFilterLocation;
+}
+
 const showToLocations = document.getElementById("showToLocations");
 showToLocations.innerHTML = "";
 let locationsToShow = (locations) => {

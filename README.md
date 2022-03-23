@@ -1,14 +1,24 @@
 # FanStudioGhibli
 
 ## Definición del producto
-Este proyecto esta desarrollado pensando en el usuario que es fanático de Studio Ghibli, ese usuario que se identifica con cada animación y que busca saber más sobre el puntaje de cada película, sus directores y productores, además de conocer sobre los personajes, sus locaciones, sus vehículos, etc.
+Fan Ghibli es un proyecto desarrollado para los fanáticos de Studio Ghibli, aquellos que tienen, en su corazón, un lugar muy especial para éstas animaciones.
+
+En nuestro logotipo quisimos reflejar la conexión tan fuerte que ésta casa productora ha podido desarrollar con su público por lo que incluimos el kanji japonés que tiene como significado la palabra amor y nombramos al proyecto Fan Ghibli.
+
+Studio Ghibli no ha lanzado tantas películas, pero su influencia ha sido considerable. Varios de éstos fanáticos usualmente copian cosas para su trabajo en Pixar o DreamWorks.. es por ello que en éste proyecto podrán encontrar todas las animaciones de ésta casa productora con información relevante como: el puntaje de cada película, sus directores, productores, conocer a detalle sobre los personajes, locaciones y vehículos de cada producción.
+
+
 ## Historias de usuarios
 
 * **Primera historia de usuario**
 Yo como: Fanática de Estudio Ghibli.
 Quiero: Poder ver una lista de sus animaciones.
 Para: saber cuántas animaciones tiene Estudio Ghibli.
+
 Criterios de aceptación: Realizar HTML para visualizar la página, Dar diseño a la página con CSS, Manipular DOM para llamar a la data y visualizar la lista de animaciones en la página.
+
+La definición de terminado para ésta historia (definition of done)
+
 * **Segunda historia de usuario**
 Yo como: Fanática de Estudio Ghibli.
 Quiero: Poder encontrar una lista de categorías

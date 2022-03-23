@@ -1,5 +1,6 @@
 import { filterDataDirector, filterDataProducer, sortData, joinCharacter, filterDataByGender, joinVehicles,
   dataOrderCharacter, filterDataSpecie, joinLocations} from '../src/data.js'
+
 //Test para filtar el director
  const testDirector = [
    {director: "Gorō Miyazaki"},
@@ -10,7 +11,8 @@ import { filterDataDirector, filterDataProducer, sortData, joinCharacter, filter
    it('devolver el nombre del director "Gorō Miyazaki"', () => {
      expect(filterDataDirector(testDirector, "Gorō Miyazaki")).toEqual([{director: "Gorō Miyazaki"}]);
    });});
- // Para filtar el productor
+
+ //Para filtar el productor
 const testProducer = [
   {producer: "Toru Hara"},
   {producer: "Toshio Suzuki"},
@@ -21,21 +23,23 @@ describe('filterDataProducer', () => {
     expect(filterDataProducer(testProducer, "Toru Hara")).toEqual([{producer: "Toru Hara"}]);
   });
 });
+
  //Filtrar por especies
  const charactersBySpecie = {
    "films": [{"title": "Castle in the Sky",
-                 "people": [{"name": "Lusheeta Toel Ul Laputa",
+                "people": [{"name": "Lusheeta Toel Ul Laputa",
                         "specie": "Human"}]},
              {"title": "My Neighbor Totoro",
-                 "people": [{"name": "Satsuki Kusakabe",
-                           "specie": "Human"}]}
+                "people": [{"name": "Satsuki Kusakabe",
+                        "specie": "Human"}]}
    ]};
   describe('filterDataSpecie', () =>{
     it('Devolver el total de personaje por especie', () =>{
       expect((filterDataSpecie(charactersBySpecie.films)).length).toBe(2);
     });
   });
-//Ordenar alfabeticamente por personaje
+
+//Ordenar alfabéticamente por personaje
 const charactersByOrder = [{name: "Lusheeta Toel Ul Laputa"}, {name: "Pazu"}, {name: "Dola"}];
 const resultByOrder = [{name: "Dola"}, {name: "Lusheeta Toel Ul Laputa"}, {name: "Pazu"}]
 describe("dataOrderCharacter", () =>{
@@ -43,6 +47,7 @@ describe("dataOrderCharacter", () =>{
     expect(dataOrderCharacter(charactersByOrder)).toEqual(resultByOrder);
   });
 });
+
  // Test para Sort
 const titleData = [{ title: "Castle in the Sky" },
                   { title: "Princess Mononoke" },
@@ -55,19 +60,7 @@ const titleData = [{ title: "Castle in the Sky" },
      expect(sortData(titleData, "AZ")).toEqual(titleAscendente);
    });
  });
-/*
- //Test para mostrar las películas en pantalla al ingresar coincidencia en el buscador
- const titleData_post =[ {
-   "films": [
-     {"title": "castle in the sky"},
-     {"title": "pom poko"}
-   ]
-}];
-describe.skip('filterTitleSearch', () => {
-  it("Deberia retornar la película en pantalla", () => {
-    expect(filterTitleSearch(titleData_post) instanceof Array).toBe(true);
-  });
-}); */
+
 //Test para mostrar los personajes en pantalla
 const characters = {
   "films": [{"title": "Castle in the Sky",
@@ -85,6 +78,7 @@ describe('joinCharacter', () => {
     expect(result.length).toBe(2);
   });
 });
+
 //Filtrar personajes por genero  -filterDataByGender-
 const charactersByGender = {
   "films": [{"title": "Castle in the Sky",
@@ -100,6 +94,7 @@ describe('filterDataByGender', () => {
     expect(result.length).toBe(2);
 });
 });
+
 // Filtrar vehículos -joinVehicles-
 const vehicles = {
   "films": [{"title": "Castle in the Sky",
@@ -113,6 +108,7 @@ describe('joinVehicles', () => {
     expect(result.length).toBe(2);
 });
 });
+
 // Filtrar Locaciones  joinLocations
 const locations = {
   "films": [{"title": "Castle in the Sky",
@@ -127,17 +123,3 @@ describe('joinLocations', () => {
 });
 });
 
-
-// //Test para ordenar el score
-// const testScore = [{rt_score: "95"}, 
-// {rt_score: "93"},
-// {rt_score: "96"}];
-// // const scoreAsc = {"films":[{"title": "Kiki's Delivery Service","rt_score": "96"}, 
-// // {"title": "Castle in the Sky","rt_score": "95"},
-// // {"title": "My Neighbor Totoro","rt_score": "93"}
-// // ]};
-//  describe('computeStats', () => {
-//   it('devolver de manera ascendente el score', () => {
-//     let prueba = computeStats(testScore);
-//     expect(prueba.length).toBe(3);
-//   })});
