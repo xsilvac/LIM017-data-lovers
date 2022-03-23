@@ -328,6 +328,24 @@ label{
     border-radius: 15px;
 }
 
+canvas {
+    margin: 50px;
+    height: 100px;
+    width: 200px;
+}
+
+.legendGrafic{
+    color: #0A3D63;
+    position: relative;
+    top: 10px;
+    left: 210px;
+}
+
+.titleGrafic{
+    color: #0A3D63;
+    margin: 50px 0px 15px 550px;
+}
+
 .pCharacters{
     padding: 2px;
     font-size: 13px;
@@ -589,7 +607,7 @@ p{
         top: 9px;
         width: 150px;
     }
-    
+
     #navigationBar {
         left: 400px;
         top: 19px;
@@ -643,6 +661,18 @@ p{
         width: 250px;
         height: 173px;
         left: -290px;
+    }
+
+    .titleGrafic {
+        color: #0A3D63;
+        margin: 5px 0px 15px 220px;
+        font-size: 15px;
+    }
+
+    .legendGrafic {
+        display: inline-block;
+        margin: 5px 80px 0px 100px;
+        left: 9px;
     }
 
     .navigation{
