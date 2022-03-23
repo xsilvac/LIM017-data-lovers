@@ -339,7 +339,6 @@ for (let element of director){
             data: {
                 labels: director,
                 datasets: [{
-                  label:'Participantes por género: Mujeres: %',
                   data: porcentaje,
                   backgroundColor: [
                   'rgb(255, 171, 193, 0.9)',

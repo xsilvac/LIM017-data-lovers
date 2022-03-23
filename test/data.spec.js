@@ -1,4 +1,5 @@
-import { filterDataDirector, filterDataProducer, sortData, joinCharacter, filterDataByGender, joinVehicles, dataOrderCharacter, filterDataSpecie, joinLocations } from '../src/data.js'
+import { filterDataDirector, filterDataProducer, sortData, joinCharacter, filterDataByGender, joinVehicles,
+  dataOrderCharacter, filterDataSpecie, joinLocations} from '../src/data.js'
 //Test para filtar el director
  const testDirector = [
    {director: "Gorō Miyazaki"},
@@ -8,7 +9,7 @@ import { filterDataDirector, filterDataProducer, sortData, joinCharacter, filter
   describe('filterDataDirector', () => {
    it('devolver el nombre del director "Gorō Miyazaki"', () => {
      expect(filterDataDirector(testDirector, "Gorō Miyazaki")).toEqual([{director: "Gorō Miyazaki"}]);
-   });
+   });});
  // Para filtar el productor
 const testProducer = [
   {producer: "Toru Hara"},
@@ -125,4 +126,18 @@ describe('joinLocations', () => {
     expect(result.length).toBe(2);
 });
 });
-});
+
+
+// //Test para ordenar el score
+// const testScore = [{rt_score: "95"}, 
+// {rt_score: "93"},
+// {rt_score: "96"}];
+// // const scoreAsc = {"films":[{"title": "Kiki's Delivery Service","rt_score": "96"}, 
+// // {"title": "Castle in the Sky","rt_score": "95"},
+// // {"title": "My Neighbor Totoro","rt_score": "93"}
+// // ]};
+//  describe('computeStats', () => {
+//   it('devolver de manera ascendente el score', () => {
+//     let prueba = computeStats(testScore);
+//     expect(prueba.length).toBe(3);
+//   })});
