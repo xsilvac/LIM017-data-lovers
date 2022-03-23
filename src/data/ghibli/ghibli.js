@@ -520,7 +520,7 @@ export default {
         {
           "id": "023306e3-9fc6-4d1d-b681-d4649dcbfff9",
           "name": "Kiyoshi Yokokawa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/f/f6/SeitaFather3.jpg",
+          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Kiyoshi%20Yokokawa.webp",
           "gender": "Male",
           "age": "40",
           "eye_color": "Black",
