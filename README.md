@@ -47,7 +47,12 @@ Criterios de aceptación: Encontrar la información que deseamos mostrar, manipu
 
 ![Prototipo de alta fidelidad](https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/Prototipo%20de%20alta%20fidelidad/Prototipo%20de%20alta%20fidelidad-07.jpg)
 
-![Prototipo de alta fidelidad](https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/Prototipo%20de%20alta%20fidelidad/Prototipo%20de%20alta%20fidelidad-06.jpg)
+![Prototipo de alta fidelidad](https://github.com/elianamendez1/LIM017-data-lovers/blob/03c0aa7fa40dfdf5074c67577532ba0357f2ae75/src/imagenes/Prototipo%20de%20alta%20fidelidad/Prototipo%20de%20alta%20fidelidad-06.jpg)
+
+![Primeras 3 pantallas](https://github.com/elianamendez1/LIM017-data-lovers/blob/03c0aa7fa40dfdf5074c67577532ba0357f2ae75/src/imagenes/Prototipo%20de%20alta%20fidelidad/FAN%20GHIBLI-06.jpg)
+
+![Siguientes 3 pantallas](https://github.com/elianamendez1/LIM017-data-lovers/blob/03c0aa7fa40dfdf5074c67577532ba0357f2ae75/src/imagenes/Prototipo%20de%20alta%20fidelidad/FAN%20GHIBLI-08.jpg)
+
 ## Plan de acción:
 
 ## Test de usabilidad
