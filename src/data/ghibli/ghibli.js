@@ -34,7 +34,7 @@ export default {
         {
           "id": "3bc0b41e-3569-4d20-ae73-2da329bf0786",
           "name": "Dola",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Dola.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Dola.webp",
           "gender": "Female",
           "age": "60",
           "eye_color": "Black",
@@ -54,7 +54,7 @@ export default {
         {
           "id": "e08880d0-6938-44f3-b179-81947e7873fc",
           "name": "Uncle Pom",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Uncle%20Pom.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Uncle%20Pom.jpg",
           "gender": "Male",
           "age": "Unspecified/Elderly",
           "eye_color": "Black",
@@ -146,7 +146,7 @@ export default {
         {
           "id": "6ba60a86-7c74-4ec4-a6f4-7112b5705a2f",
           "name": "Gondoa",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Gondoa.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Gondoa.jpg",
           "climate": "TODO",
           "terrain": "TODO",
           "surface_water": "40",
@@ -168,7 +168,7 @@ export default {
         {
           "id": "0fafa7a3-64c1-43fe-881b-ecb605c01e09",
           "name": "Laputa",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Laputa.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Laputa.jpg",
           "climate": "Continental",
           "terrain": "City",
           "surface_water": "40",
@@ -179,7 +179,7 @@ export default {
         {
           "id": "0132f7f6-fd52-4ac3-b5df-c96b609f77b6",
           "name": "Tedis",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Tedis.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Tedis.webp",
           "climate": "Continental",
           "terrain": "Hill",
           "surface_water": "30",
@@ -192,7 +192,7 @@ export default {
         {
           "id": "4e09b023-f650-4747-9ab9-eacf14540cfb",
           "name": "Air Destroyer Goliath",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/AirDestroyerGoliath.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/AirDestroyerGoliath.webp",
           "description": "A military airship utilized by the government to access Laputa",
           "vehicle_class": "Airship",
           "length": "1,000",
@@ -216,7 +216,7 @@ export default {
         {
           "id": "986faac6-67e3-4fb8-a9ee-bad077c2e7fe",
           "name": "Satsuki Kusakabe",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/f/f2/Satsuki_Kusakabe.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Kusakabe's%20House.png",
           "gender": "Female",
           "age": "11",
           "eye_color": "Dark Brown/Black",
@@ -256,7 +256,7 @@ export default {
         {
           "id": "08ffbce4-7f94-476a-95bc-76d3c3969c19",
           "name": "Granny",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Granny.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Granny.jpg",
           "gender": "Female",
           "age": "Elder",
           "eye_color": "Black",
@@ -286,7 +286,7 @@ export default {
         {
           "id": "591524bc-04fe-4e60-8d61-2425e42ffb2a",
           "name": "Chu Totoro",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Chu%20Totoro.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Chu%20Totoro.jpg",
           "gender": "NA",
           "age": "",
           "eye_color": "Black",
@@ -296,7 +296,7 @@ export default {
         {
           "id": "c491755a-407d-4d6e-b58a-240ec78b5061",
           "name": "Chibi Totoro",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Chibi_Totoro.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Chibi_Totoro.webp",
           "gender": "NA",
           "age": "",
           "eye_color": "Black",
@@ -306,7 +306,7 @@ export default {
         {
           "id": "f467e18e-3694-409f-bdb3-be891ade1106",
           "name": "Catbus",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Catbus.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Catbus.jpg",
           "gender": "Male",
           "age": "NA",
           "eye_color": "Yellow",
@@ -318,7 +318,7 @@ export default {
         {
           "id": "660c8c91-bd92-43db-b475-b2df6ca96fec",
           "name": "Kusakabe's House",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Kusakabe's%20House.png",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Kusakabe's%20House.png",
           "climate": "Mild",
           "terrain": "River",
           "surface_water": "40",
@@ -448,7 +448,7 @@ export default {
         {
           "id": "62346d33-caa0-4c17-8016-0aca56f3066b",
           "name": "Karikiya",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Karikiya.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Karikiya.webp",
           "climate": "Mild",
           "terrain": "City",
           "surface_water": "30",
@@ -510,7 +510,7 @@ export default {
         {
           "id": "227c01a6-4e29-4582-bc4b-35106a704ab0",
           "name": "Mrs. Yokokawa",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Mrs.%20Yokokawa.png",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Mrs.%20Yokokawa.png",
           "gender": "Female",
           "age": "Adult",
           "eye_color": "Black",
@@ -520,7 +520,7 @@ export default {
         {
           "id": "023306e3-9fc6-4d1d-b681-d4649dcbfff9",
           "name": "Kiyoshi Yokokawa",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Kiyoshi%20Yokokawa.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Kiyoshi%20Yokokawa.webp",
           "gender": "Male",
           "age": "40",
           "eye_color": "Black",
@@ -530,7 +530,7 @@ export default {
         {
           "id": "0e18b23d-1f21-4a83-a6de-f01147624875",
           "name": "Seita's Aunt",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Seita's%20Aunt.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Seita's%20Aunt.webp",
           "gender": "Female",
           "age": "Elder",
           "eye_color": "Black",
@@ -710,7 +710,7 @@ export default {
         {
           "id": "4a2e2cee-08ca-4d44-9564-2b3e5421bafb",
           "name": "Fio Piccolo",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Fio_Piccolo.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Fio_Piccolo.webp",
           "gender": "Female",
           "age": "17",
           "eye_color": "Brown",
@@ -775,7 +775,7 @@ export default {
         {
           "id": "d8f893b5-1dd9-41a1-9918-0099c1aa2de8",
           "name": "Red Wing",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/PorcoPlain.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/PorcoPlain.jpg",
           "description": "An experimental aircraft captured by Porco. Named Savoia S.21",
           "vehicle_class": "Airplane",
           "length": "20",
@@ -787,7 +787,7 @@ export default {
         {
           "id": "7eb1b9cd-8153-4ef6-a0d4-1e9abd8d78da",
           "name": "Dabohaze",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Dabohaze.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Dabohaze.webp",
           "description": "It's the Mamma Aiuto Gang's battle ship, They're an air pirate gang lead by Capo",
           "vehicle_class": "Battle ship",
           "length": "NA",
@@ -977,7 +977,7 @@ export default {
         {
           "id": "42f787d8-1fcb-4d3d-82f2-a74409869368",
           "name": "Seiji's House",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Seiji's%20House.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Seiji's%20House.jpg",
           "climate": "Continental",
           "terrain": "City",
           "surface_water": "0",
@@ -1021,7 +1021,7 @@ export default {
         {
           "id": "34277bec-7401-43fa-a00a-5aee64b45b08",
           "name": "Eboshi",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Eboshi.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Eboshi.webp",
           "gender": "Female",
           "age": "Adult",
           "eye_color": "Hazel",
@@ -1041,7 +1041,7 @@ export default {
         {
           "id": "20e3bd33-b35d-41e6-83a4-57ca7f028d38",
           "name": "Kohroku",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Kohroku.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Kohroku.webp",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
@@ -1071,7 +1071,7 @@ export default {
         {
           "id": "030555b3-4c92-4fce-93fb-e70c3ae3df8b",
           "name": "Yakul",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Yakul.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Yakul.webp",
           "age": "Unknown",
           "gender": "Male",
           "eye_color": "Grey",
@@ -1249,7 +1249,7 @@ export default {
         {
           "id": "969850ec-4ab6-4170-ab6b-ae6ac42e1e9a",
           "name": "No-Face",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/No-Face.png",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/No-Face.png",
           "gender": "Unknown (Possible Male)",
           "age": "unknown",
           "eye_color": "NA",
@@ -1279,7 +1279,7 @@ export default {
         {
           "id": "d9aceca5-beb9-4b2a-85ba-fc17d33750f8",
           "name": "Zeniba",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Zeniba.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Zeniba.jpg",
           "gender": "Female",
           "age": "Elder",
           "eye_color": "Dark brown",
@@ -1299,7 +1299,7 @@ export default {
         {
           "id": "2e7bb7bf-4149-4df5-b6e4-76064021651c",
           "name": "Yūko Ogino",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Y%C5%ABko%20Ogino.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Y%C5%ABko%20Ogino.jpg",
           "gender": "Female",
           "age": "35",
           "eye_color": "Dark brown",
@@ -1396,7 +1396,7 @@ export default {
         {
           "id": "269dcd81-8037-45bb-892b-1c86c9696222",
           "name": "Toto",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Toto.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Toto.webp",
           "gender": "Male",
           "age": "NA",
           "eye_color": "Black",
@@ -1438,7 +1438,7 @@ export default {
         {
           "id": "a8bd9c03-7c80-4a97-b7c0-6a668acaf576",
           "name": "The Cat Kingdom",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/The%20Cat%20Kingdom.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/The%20Cat%20Kingdom.webp",
           "climate": "Continental",
           "terrain": "Plain",
           "surface_water": "30",
@@ -1477,7 +1477,7 @@ export default {
         {
           "id": "fa9b410f-cad4-457d-ac71-86b0afa6cf0a",
           "name": "Howl Jenkins Pendragon",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Howl%20Jenkins%20Pendragon.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Howl%20Jenkins%20Pendragon.webp",
           "gender": "Male",
           "age": "27",
           "eye_color": "Bright blue",
@@ -1497,7 +1497,7 @@ export default {
         {
           "id": "1287b275-6c32-4113-947f-519316d4a6be",
           "name": "Witch of the Waste",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/WitchOfTheWast.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/WitchOfTheWast.webp",
           "gender": "Female",
           "age": "59",
           "eye_color": "Brown",
@@ -1527,7 +1527,7 @@ export default {
         {
           "id": "45237428-93bf-4dd6-97ce-f10647300429",
           "name": "Prince Justin or Turnip Head",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Prince%20Justin%20or%20Turnip%20Head.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Prince%20Justin%20or%20Turnip%20Head.webp",
           "gender": "Male",
           "age": "20-30",
           "eye_color": "Grey",
@@ -1592,7 +1592,7 @@ export default {
         {
           "id": "2354305f-dccd-4c44-a79e-cc60ba7376e6",
           "name": "Howl's castle",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Howl's%20Moving%20Castle.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Howl's%20Moving%20Castle.jpg",
           "description": "Wizard Howl's home. It's scale changes from scene to scene.",
           "vehicle_class": "Moving castle",
           "length": "unknown",
@@ -1646,7 +1646,7 @@ export default {
         {
           "id": "60469915-e18e-4cf3-b43d-95ea56cc300c",
           "name": "Tenar",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Tenar.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Tenar.jpg",
           "gender": "Female",
           "age": "Adult",
           "eye_color": "Grey",
@@ -1666,7 +1666,7 @@ export default {
         {
           "id": "59d22f97-f45d-4a6c-b473-13ee9e69082a",
           "name": "Cob",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Cob.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Cob.webp",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Violet",
@@ -1698,7 +1698,7 @@ export default {
         {
           "id": "bcc54f38-8847-45b0-97b1-307c94b2b517",
           "name": "Enland",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Enland.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Enland.jpg",
           "climate": "Wet",
           "terrain": "Earthsea",
           "surface_water": "100",
@@ -1732,7 +1732,7 @@ export default {
         {
           "id": "4524e6c2-04f3-4633-b2cb-e1cd3f566213",
           "name": "Brunhilde/Ponyo",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Brunhilda.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Brunhilda.webp",
           "gender": "Female",
           "age": "5",
           "eye_color": "Dark brown",
@@ -1742,7 +1742,7 @@ export default {
         {
           "id": "0cb26464-3416-4490-8f42-cd9d7276884e",
           "name": "Kōichi",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/K%C5%8Dichi.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/K%C5%8Dichi.jpg",
           "gender": "Male",
           "age": "30",
           "eye_color": "Dark brown",
@@ -1848,7 +1848,7 @@ export default {
         {
           "id": "923d70c9-8f15-4972-ad53-0128b261d628",
           "name": "Sosuke's Boat",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Sosuke'sBoat.png",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Sosuke'sBoat.png",
           "description": "A toy boat where Sosuke plays",
           "vehicle_class": "Boat",
           "length": "10",
@@ -1892,7 +1892,7 @@ export default {
         {
           "id": "ef5ee7c5-ae68-418d-a319-f3e79262cd87",
           "name": "Homily Clock",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Homily%20Clock.jpeg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Homily%20Clock.jpeg",
           "gender": "Female",
           "age": "52",
           "eye_color": "Brown",
@@ -1942,7 +1942,7 @@ export default {
         {
           "id": "379f1453-38ca-486f-9d8b-f4eddc1e3fd3",
           "name": "Niya",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Niya.png",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Niya.png",
           "gender": "Male",
           "age": "52",
           "eye_color": "White",
@@ -1954,7 +1954,7 @@ export default {
         {
           "id": "1e7ed524-4b4f-466b-978c-69dda9777396",
           "name": "Sho's house",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Sho's%20house.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Sho's%20house.jpg",
           "climate": "Warm",
           "terrain": "Forest",
           "surface_water": "10",
@@ -2177,7 +2177,7 @@ export default {
         {
           "id": "2b380662-626d-42fb-9e3a-14f951201c8b",
           "name": "Nagoya",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Nagoya.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Nagoya.jpg",
           "climate": "Damp",
           "terrain": "Hill",
           "surface_water": "20",
@@ -2190,7 +2190,7 @@ export default {
         {
           "id": "411f66ed0-771c-46d3-8f68-a3b65c6dd91c",
           "name": "Mitsubishi 1MF9 ",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Mitsubishi%201MF9.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Mitsubishi%201MF9.jpg",
           "description": "The Mitsubishi 1MF9 or Mitsubishi Experimental Taka-type Carrier Fighter was a prototype Japanese fighter aircraft of the 1920s. It was a single-engined, single-seat biplane intended to operate from the Imperial Japanese Navy's aircraft carriers, but only two were built, with the type being rejected by the Navy.",
           "vehicle_class": "War plane",
           "length": "8",
@@ -2224,7 +2224,7 @@ export default {
         {
           "id": "a21fbdd5-16bc-4931-80d0-3ce89ffce778",
           "name": "Sutemaru",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Sutemaru.jpg",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/Sutemaru.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
@@ -2330,7 +2330,7 @@ export default {
         {
           "id": "28d07ace-c309-48c6-b48e-ae2ece3a238c",
           "name": "Anna Sasaki",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/AnnaSasaki.png",
+          "img": "https://github.com/xsilvac/LIM017-data-lovers/blob/main/src/imagenes/peliculasSinImagen/AnnaSasaki.png",
           "gender": "Female",
           "age": "12",
           "eye_color": "Blue",
@@ -2360,7 +2360,7 @@ export default {
         {
           "id": "66bca178-9920-4ec3-91e9-0d5b8a76dba1",
           "name": "Setsu Oiwa",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Setsu_Ooiwa.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Setsu_Ooiwa.webp",
           "gender": "Female",
           "age": "50-60",
           "eye_color": "Dark brown",
@@ -2370,7 +2370,7 @@ export default {
         {
           "id": "5b8e4413-f943-40ba-8f9f-0ba059a401f0",
           "name": "Hisako",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Hisako.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Hisako.webp",
           "gender": "Female",
           "age": "Elder",
           "eye_color": "Dark brown",
@@ -2400,7 +2400,7 @@ export default {
         {
           "id": "31b49ef6-ee60-4603-b983-e67fa0718aa9",
           "name": "Kiyomasa Ōiwa",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Kiyomasa_Ooiwa.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Kiyomasa_Ooiwa.webp",
           "gender": "Male",
           "age": "50-60",
           "eye_color": "Dark brown",
@@ -2410,7 +2410,7 @@ export default {
         {
           "id": "5d52d16f-ce72-41bd-8d88-436e206d9449",
           "name": "Doctor Yamashita",
-          "img": "http://127.0.0.1:5500/src/imagenes/peliculasSinImagen/Doctor_Yamashita.webp",
+          "img": "https://raw.githubusercontent.com/xsilvac/LIM017-data-lovers/main/src/imagenes/peliculasSinImagen/Doctor_Yamashita.webp",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
