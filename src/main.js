@@ -131,7 +131,6 @@ responsiveMenu.addEventListener("click", (e) => {
 const filterDirector = document.getElementById("filterDirector");
 filterDirector.addEventListener("change", (x) => {
   const selectedDirector = filterDataDirector(allMovies, x.target.value);
-  directors.push(selectedDirector);
   showInScreen(selectedDirector);
 });
 
