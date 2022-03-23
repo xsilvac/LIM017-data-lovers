@@ -1,11 +1,13 @@
+/* eslint-disable no-undef */
 import {
   filterDataDirector, filterDataProducer, sortData, filterTitle, joinCharacter, joinVehicles, joinLocations,
-  filterDataByGender, filterDataSpecie, dataOrderCharacter, filterName, filterNameLocations} from "./data.js";
+  filterDataByGender, filterDataSpecie, dataOrderCharacter, filterName, filterNameLocations, computeStats, computeStatsTwo} from "./data.js";
+  
 import data from "./data/ghibli/ghibli.js";
 const logoSecondPage = document.getElementById("logo");
 logoSecondPage.addEventListener("click", () => {
-  document.getElementById("secondPage").style.display = "block";
   document.getElementById("firstPage").style.display = "none";
+  document.getElementById("secondPage").style.display = "block";
   document.getElementById("thirdPage").style.display = "none";
   document.getElementById("fourtPage").style.display = "none";
   document.getElementById("fifthPage").style.display = "none";
@@ -24,8 +26,9 @@ btn.addEventListener("click", () => {
   document.getElementById("secondPage").style.display = "block";
   hiddenFooter.classList.remove("hiden");
   hiddenNav.classList.remove("hiden");
-  hiddenNav1.classList.remove("hiden");
-});
+  hiddenNav1.classList.remove("hiden")
+})
+
 //Mostrar página principal
 let allMovies = data.films;
 let printFilms = document.getElementById("listOfFilms");
@@ -42,7 +45,9 @@ const showInScreen = (y) => {
     printFilms.innerHTML += moviesToShow(z);
   });
 };
-showInScreen(allMovies);
+ showInScreen(allMovies);
+
+ //Modales
 let informationModal = (m) => {
   return `
   <section class = "containerModals">
@@ -74,12 +79,16 @@ const addModal = () =>{
   )
 }
 addModal();
+
 //filtrar por director
+let directors = [];
 const filterDirector = document.getElementById("filterDirector");
 filterDirector.addEventListener("change", (x) => {
   const selectedDirector = filterDataDirector(allMovies, x.target.value);
+  directors.push(selectedDirector);
   showInScreen(selectedDirector);
 });
+
 //Filtrar por productor
 const filterProducer = document.getElementById("filterProducer");
 filterProducer.addEventListener("change", (x) => {
@@ -226,3 +235,76 @@ searchLocations.addEventListener("keyup", () => {
   const searchNameLocations = filterNameLocations(joinLocations(allMovies), "name", searchLocations.value.toLowerCase());
   showInScreenFour(searchNameLocations);
 })
+
+const dataOrderScore = computeStats("rtScore",data.films);
+const dataTitle = dataOrderScore.map(e=>e.title);
+const dataFilmsRt = (dataOrderScore.map(e=>e.rt_score)).map(Number);
+const myChart= document.getElementById("myChart").getContext("2d");
+function totalCaseschart(graphic){
+new Chart (graphic, {
+        type:'bar',
+        data: {
+            labels: dataTitle,
+            datasets: [{
+              label:'Score of each movie',
+              data: dataFilmsRt,
+            backgroundColor: [
+              'rgb(244, 190, 238, 0.7)',
+
+                ],
+            },
+          ]}
+    })}
+totalCaseschart(myChart);
+
+let director = allMovies.map((x) => x.director);
+director = director.filter((item, i) =>{
+  return director.indexOf(item) === i;
+})
+
+const mySecondChart= document.getElementById("mySecondChart").getContext("2d");
+let porcentaje =[];
+for (let element of director){
+  porcentaje.push((computeStatsTwo(allMovies, element)));
+ }
+ 
+ function getPercent(a){
+  new Chart (a, {
+            type:'pie',
+            data: {
+                labels: director,
+                datasets: [{
+                  label:'Participantes por género: Mujeres: %',
+                  data: porcentaje,
+                  backgroundColor: [
+                  'rgb(255, 171, 193, 0.9)',
+                  'rgb(156, 170, 242, 0.9)',
+                  'rgb(255, 202, 203, 0.9)',
+                  'rgb(149, 203, 255, 0.9)', 
+                  'rgb(255, 244, 209, 0.9)', 
+                  'rgb(180, 229, 255, 0.9)'
+                    ],
+                },
+              ]},
+              options: {
+                responsive: true,
+                plugins: {
+                  legend: {
+                    position: 'top',
+                  },
+                  title: {
+                    position: 'bottom',
+                    display: true,
+                    text: `Isao Takahata: 25%
+                    Hayao Miyazaki: 45%
+                    Gorō Miyazaki:10%
+                    Hiromasa Yonebayashi:10%
+                    Hiroyuki Morita: 5%
+                    Yoshifumi Kondō: 5%`
+                  }
+                }
+              },
+        })
+      }
+    getPercent(mySecondChart);
+

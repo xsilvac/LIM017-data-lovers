@@ -17,23 +17,6 @@ export const sortData = (data, sortOrder) => {
   if (sortOrder === 'titleDescending') { titleSort.reverse() }
   return titleSort, titleSort.reverse();
 };
-/* export const sortData = (data, sortBy, sortOrder) => {
-  const resultOrder = data.sort((a, b) => {
-    if (a[sortBy] > b[sortBy]) {
-      return -1;
-    }
-    else if (a[sortBy] < b[sortBy]) {
-      return 1;
-    }
-    else {
-      return 0;
-    }
-  });
-  if (sortOrder === "titleDescending") {
-    return resultOrder.reverse();
-  }
-  return resultOrder, resultOrder.reverse();
-} */
 //Base de datos por personajes
 export const joinCharacter = (data) => {
   const dataPersonajes = data.map((x) => x.people);
@@ -77,4 +60,18 @@ export const joinLocations = (data) => {
 export const filterNameLocations = (data, x, a) => {
   const resultFilterLocation = data.filter(el => el[x].toLowerCase().includes(a.toLowerCase()));
   return resultFilterLocation;
+}
+
+export const computeStats = (x, data) => {
+  if (x == "rtScore") {
+    const dataFilmsOrder = data.sort((a, b) => b.rt_score - a.rt_score);
+    return dataFilmsOrder;
+  }
+}
+
+export const  computeStatsTwo = (data, nameDirector) =>{
+  const moviesByDirector = (data.filter(y => y.director === nameDirector));
+  const count = moviesByDirector.length;
+  const percent = Math.round((count / data.length)*100);
+  return percent;
 }
